@@ -1,0 +1,526 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#cssload-loader {
+  width: 244px;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  font-family: helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.2em;
+}
+#cssload-loader::before,
+#cssload-loader::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: rgb(232, 207, 46);
+  position: absolute;
+  animation: cssload-load 0.665s infinite alternate ease-in-out;
+  -o-animation: cssload-load 0.665s infinite alternate ease-in-out;
+  -ms-animation: cssload-load 0.665s infinite alternate ease-in-out;
+  -webkit-animation: cssload-load 0.665s infinite alternate ease-in-out;
+  -moz-animation: cssload-load 0.665s infinite alternate ease-in-out;
+}
+#cssload-loader::before {
+  top: 0;
+}
+#cssload-loader::after {
+  bottom: 0;
+}
+
+#main-content {
+  display: none;
+}
+
+.animate-bottom {
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+/* ### BEGIN - SOCIAL MEDIAS  ### */
+/* @media screen and (min-width: 1216px) {
+  #socialmedia {
+    position: absolute;
+    z-index: 1;
+  }
+
+  #socialmedia ul {
+    position: fixed;
+    left: 10px;
+    top: 250px;
+    width: 50px;
+    height: 100px
+  }
+
+  #socialmedia li a {
+    display: block;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #787878;
+    margin-bottom: 10px;
+    background-image: url('../assets/socialicons.png')
+  }
+
+  #instagram {
+    background-position: 0 0;
+  }
+
+  #facebook {
+    background-position: 58px 0;
+  }
+
+  #twitter {
+    background-position: 29px 0;
+  }
+
+  #instagram:hover {
+    background-position: 0 29px;
+  }
+
+  #facebook:hover {
+    background-position: 58px 29px;
+  }
+
+  #twitter:hover {
+    background-position: 29px 29px;
+  }
+} */
+/* ### END - SOCIAL MEDIAS ### */
+
+/* ### BEGIN - NAVBAR SECTION ### */
+.navbar-section {
+  box-shadow: 0px 1px 4px #888888;
+}
+/* ### END - NAVBAR SECTION ### */
+
+/* ### BEGIN - HERO SECTION ### */
+.hero-section.hero .has-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section.hero .hero-background video {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section.hero .is-transparent {
+  opacity: 0.3;
+}
+
+.textscroller {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.textframe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  animation: SCOOT 16s linear infinite;
+  -webkit-animation: SCOOT 16s linear infinite;
+}
+
+.textscroller li {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.textscroller li p {
+  color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .textscroller li p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+/* ### END - HERO SECTION ### */
+
+/* ### BEGIN - PRICING SECTION ### */
+.pricing-plan {
+  cursor: default;
+  box-shadow: 0px 2px 5px #d4d4d4;
+}
+
+/* bronze package */
+.pricing-plan.pricing-plan__6 {
+  background-color: #ffd17b;
+}
+.pricing-plan.pricing-plan__6 .plan-header {
+  background-color: #ffd17b;
+}
+.pricing-plan.pricing-plan__6 .plan-price {
+  background-color: #ffd17b;
+}
+.pricing-plan.pricing-plan__6 .plan-items .plan-item {
+  background-color: #ffc862;
+  border-bottom: 0.1rem solid #ffc862;
+}
+.pricing-plan.pricing-plan__6 .plan-footer {
+  background-color: #ffd17b;
+}
+
+/* silver package */
+.pricing-plan.pricing-plan__2 {
+  background-color: #bebebe;
+}
+.pricing-plan.pricing-plan__2 .plan-header {
+  background-color: #bebebe;
+}
+.pricing-plan.pricing-plan__2 .plan-price {
+  background-color: #bebebe;
+}
+.pricing-plan.pricing-plan__2 .plan-items .plan-item {
+  background-color: #b5b5b5;
+  border-bottom: 0.1rem solid #b5b5b5;
+}
+.pricing-plan.pricing-plan__2 .plan-footer {
+  background-color: #bebebe;
+}
+
+/* gold package */
+.pricing-plan.pricing-plan__3 {
+  background-color: #e2cf62;
+}
+.pricing-plan.pricing-plan__3 .plan-header {
+  background-color: #e2cf62;
+}
+.pricing-plan.pricing-plan__3 .plan-price {
+  background-color: #e2cf62;
+}
+.pricing-plan.pricing-plan__3 .plan-items .plan-item {
+  background-color: #d6c357;
+  border-bottom: 0.1rem solid #d6c357;
+}
+.pricing-plan.pricing-plan__3 .plan-footer {
+  background-color: #e2cf62;
+}
+
+/* ### END - PRICING SECTION ### */
+
+/* ### BEGIN - FAQ SECTION ### */
+.fa-sort-up,
+.fa-sort-down {
+  color: #ffffff;
+}
+/* ### END - FAQ SECTION ### */
+
+/* ### BEGIN - ABOUT SECTION ### */
+.image-bg {
+  background-image: url('../assets/citybg.jpg');
+  height: 300px;
+  background-size: cover;
+  box-shadow: inset 0 200px 100px -100px #fff;
+}
+/* ### END - ABOUT SECTION ### */
+
+/* ### BEGIN - FOOTER SECTION ### */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__inner img {
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 769px) {
+  .footer__inner {
+    max-width: 769;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer__inner img {
+    padding-bottom: unset;
+  }
+}
+/* ### END - FOOTER SECTION ### */
+
+/* ### BEGIN - ANIMATIONS ### */
+@keyframes cssload-load {
+  0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 39px;
+  }
+  100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+  }
+}
+
+@-o-keyframes cssload-load {
+  0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 39px;
+  }
+  100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+  }
+}
+
+@-ms-keyframes cssload-load {
+  0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 39px;
+  }
+  100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+  }
+}
+
+@-webkit-keyframes cssload-load {
+  0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 39px;
+  }
+  100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+  }
+}
+
+@-moz-keyframes cssload-load {
+  0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 39px;
+  }
+  100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+  }
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@-moz-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@-o-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes SCOOT {
+  0% {
+    top: 0;
+  }
+  22.73% {
+    top: 0;
+  }
+  25.003% {
+    top: -200px;
+  }
+  47.733% {
+    top: -200px;
+  }
+  50.006% {
+    top: -400px;
+  }
+  72.736% {
+    top: -400px;
+  }
+  75.06% {
+    top: -600px;
+  }
+  97.79% {
+    top: -600px;
+  }
+  100% {
+    top: -800px;
+  }
+}
+@-moz-keyframes SCOOT {
+  0% {
+    top: 0;
+  }
+  22.73% {
+    top: 0;
+  }
+  25.003% {
+    top: -200px;
+  }
+  47.733% {
+    top: -200px;
+  }
+  50.006% {
+    top: -400px;
+  }
+  72.736% {
+    top: -400px;
+  }
+  75.06% {
+    top: -600px;
+  }
+  97.79% {
+    top: -600px;
+  }
+  100% {
+    top: -800px;
+  }
+}
+@-o-keyframes SCOOT {
+  0% {
+    top: 0;
+  }
+  22.73% {
+    top: 0;
+  }
+  25.003% {
+    top: -200px;
+  }
+  47.733% {
+    top: -200px;
+  }
+  50.006% {
+    top: -400px;
+  }
+  72.736% {
+    top: -400px;
+  }
+  75.06% {
+    top: -600px;
+  }
+  97.79% {
+    top: -600px;
+  }
+  100% {
+    top: -800px;
+  }
+}
+@keyframes SCOOT {
+  0% {
+    top: 0;
+  }
+  22.73% {
+    top: 0;
+  }
+  25.003% {
+    top: -200px;
+  }
+  47.733% {
+    top: -200px;
+  }
+  50.006% {
+    top: -400px;
+  }
+  72.736% {
+    top: -400px;
+  }
+  75.06% {
+    top: -600px;
+  }
+  97.79% {
+    top: -600px;
+  }
+  100% {
+    top: -800px;
+  }
+}
+
+/* ### END - ANIMATIONS ### */

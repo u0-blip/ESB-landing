@@ -1,0 +1,9 @@
+
+# Env Files
+.env.*
+
+# Dist Directory
+dist
+
+
+.vscode

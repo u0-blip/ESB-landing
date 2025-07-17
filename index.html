@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <style>
         :root {
             --color-primary: #FFCD1C;
@@ -190,9 +191,6 @@
             right: 18px;
             z-index: 2;
         }
-        .pricing-card .price {
-            color:rgb(148, 157, 166);
-        }
         .pricing-card.gold .price {
             color: #FFD700;
         }
@@ -202,12 +200,16 @@
         .pricing-card.bronze .price {
             color: #CD7F32;
         }
-        .pricing-card.silver {
-            border: 2.5px solid var(--color-accent);
-            box-shadow: 0 0 0 4px rgba(59,130,246,0.08);
-            position: relative;
-        }
         .bg-accent { background-color: #3B82F6; }
+        .stat-hover {
+            cursor: pointer;
+            transition: transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+        }
+        .stat-hover:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 8px 24px 0 rgba(16, 42, 67, 0.12);
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
@@ -259,24 +261,23 @@
     <main>
         <section class="relative text-white text-center" style="background: url('./assets/hero.jpg') no-repeat center center; background-size: cover;">
             <div class="absolute inset-0 bg-black opacity-60"></div>
-            <div class="relative container mx-auto py-32 px-4">
-                <h1 class="text-5xl font-bold mb-4">Winning with Expert Basketball Tips</h1>
+            <div class="relative container mx-auto pt-32 pb-20 px-4">
+                <h1 class="text-5xl font-bold mb-4 flex items-center justify-center gap-2">Winning with Expert NBA Tips <img src="./assets/nba-logo.svg" class="w-16 h-16 inline-block align-middle" alt="NBA Logo" /></h1>
                 <p class="text-xl mb-8">Join 1,200+ successful bettors getting data-driven NBA tips with 78% win rate and 25% ROI</p>
                 <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-                    <a href="#" class="w-full md:w-auto btn-primary text-black font-bold py-3 px-6 rounded-lg text-center">Get Winning Tips</a>
-                    <a href="#" class="w-full md:w-auto bg-secondary text-white font-bold py-3 px-6 rounded-lg text-center">View Results</a>
+                    <a href="#" class="w-full md:w-auto btn-primary text-black font-extrabold text-2xl md:text-3xl py-5 px-10 rounded-xl text-center shadow-lg transition-transform duration-200 hover:scale-105">Get Winning Tips</a>
                 </div>
             </div>
-        </section>
 
-        <section class="section-spacing container mx-auto gutters">
-            <h2 class="text-3xl font-bold text-center mb-2">Live Performance Stats</h2>
-            <p class="text-center text-gray-400 mb-8">Real-time results from our expert tipsters</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-                <div class="card p-6"><p class="text-4xl stat-number text-success">78%</p><p>Win Rate</p></div>
-                <div class="card p-6"><p class="text-4xl stat-number text-primary">+25%</p><p>Average ROI</p></div>
-                <div class="card p-6"><p class="text-4xl stat-number text-accent">12</p><p>Win Streak</p></div>
-                <div class="card p-6"><p class="text-4xl stat-number">1,200+</p><p>Active Members</p></div>
+            <div class="relative container mx-auto gutters pb-16">
+                <h2 class="text-3xl font-bold text-center mb-2">Live Performance Stats</h2>
+                <p class="text-center text-gray-400 mb-8">Real-time results from our expert tipsters</p>
+                <div class="dark grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div class="card p-6 stat-hover"><p class="text-4xl stat-number text-success">78%</p><p>Win Rate</p></div>
+                    <div class="card p-6 stat-hover"><p class="text-4xl stat-number text-primary">+25%</p><p>Average ROI</p></div>
+                    <div class="card p-6 stat-hover"><p class="text-4xl stat-number text-accent">12</p><p>Win Streak</p></div>
+                    <div class="card p-6 stat-hover"><p class="text-4xl stat-number">1,200+</p><p>Active Members</p></div>
+                </div>
             </div>
         </section>
 
@@ -312,30 +313,31 @@
             <h2 class="text-3xl font-bold text-center mb-2">PRICING</h2>
             <p class="text-center  mb-8">First time customer? Try our standard trade. Looking to get more out of Elite Sports Bets? Go Gold!</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="card pricing-card standard p-6 flex flex-col">
-                    <h3 class="text-xl font-bold">Standard</h3>
-                    <p class="text-4xl font-bold my-4 price">$25</p>
-                    <p class="dark:text-gray-400 text-gray-300">One (1) GUARANTEED individual sports trade credit.</p>
-                    <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6">Choose</a>
-                </div>
                 <div class="card pricing-card bronze p-6 flex flex-col">
                     <h3 class="text-xl font-bold">Bronze</h3>
-                    <p class="text-4xl font-bold my-4 price">$100</p>
+                    <p class="text-4xl font-bold my-4 price">$120</p>
                     <p class="dark:text-gray-400 text-gray-300">Five (5) GUARANTEED individual sports trade credits.</p>
                     <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6">Choose</a>
                 </div>
-                <div class="card pricing-card silver p-6 flex flex-col ring-2 ring-accent shadow-lg">
-                    <span class="best-value-badge">Best Value</span>
+                <div class="card pricing-card silver p-6 flex flex-col">
                     <h3 class="text-xl font-bold">Silver</h3>
-                    <p class="text-4xl font-bold my-4 price">$250</p>
+                    <p class="text-4xl font-bold my-4 price">$300</p>
                     <p class="dark:text-gray-400 text-gray-300">Fifteen (15) GUARANTEED individual sports trade credits.</p>
-                    <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center bg-accent text-white font-bold py-2 px-4 rounded-lg mt-6">Choose</a>
+                    <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6">Choose</a>
                 </div>
                 <div class="card pricing-card gold p-6 flex flex-col">
                     <h3 class="text-xl font-bold">Gold</h3>
-                    <p class="text-4xl font-bold my-4 price">$500</p>
+                    <p class="text-4xl font-bold my-4 price">$550</p>
                     <p class="dark:text-gray-400 text-gray-300">Thirty (30) GUARANTEED individual sports trade credits.</p>
                     <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6">Choose</a>
+                </div>
+                <div class="card pricing-card standard platinum p-8 flex flex-col ring-2 ring-accent border-accent shadow-2xl relative scale-105 z-10" style="background: linear-gradient(135deg, #3B82F6 0%, #FFCD1C 100%); color: #fff;">
+                    <span class="best-value-badge">Best Value</span>
+                    <h3 class="text-xl font-bold flex items-center gap-2">Platinum <span class="text-3xl text-yellow-400"><i class="fa-solid fa-crown"></i></span></h3>
+                    <p class="text-4xl font-bold text-white my-4 price">$1100</p>
+                    <p class="text-dark">Unlimited monthly picks including live (in-play) and futures trades. </p>
+                    <p class="text-dark">A senior trader is assigned to you and acts as your VIP concierge. </p>
+                    <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center bg-accent text-white font-bold py-2 px-4 rounded-lg mt-6 platinum-btn">Choose</a>
                 </div>
             </div>
             <p class="text-center text-sm dark:text-gray-500 mt-6"><b>GUARANTEED</b> = if the pick does not win, you will receive another credit until you win. This means that you will only be deducted a credit if the pick you unlock wins. If the pick we provide is incorrect, you will receive another credit until you unlock a winning pick. Please note: This does not guarantee a profit.</p>
@@ -412,13 +414,11 @@
         </section>
           
         
-        <section class="section-spacing container mx-auto gutters">
-            <div class="bg-primary rounded-lg text-center p-12">
-                <h2 class="text-3xl font-bold text-black mb-4">Ready to Start Winning?</h2>
-                <p class="text-black mb-8">Join 1,200+ successful bettors and turn your basketball knowledge into profit.</p>
-                <a href="#" class="bg-white text-black font-bold py-3 px-8 rounded-lg">Get Started Today</a>
-            </div>
-        </section>
+        <div class="bg-primary rounded-lg text-center p-12">
+            <h2 class="text-3xl font-bold text-black mb-4">Ready to Start Winning?</h2>
+            <p class="text-black mb-8">Join 1,200+ successful bettors and turn your basketball knowledge into profit.</p>
+            <a href="#" class="bg-white text-black font-bold py-3 px-8 rounded-lg">Get Started Today</a>
+        </div>
 
         <section class="section-spacing container mx-auto gutters max-w-4xl">
             <h2 class="text-3xl font-bold text-center mb-8">FREQUENTLY ASKED QUESTIONS</h2>

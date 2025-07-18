@@ -1,0 +1,2502 @@
+[
+  {
+    "id": 2404,
+    "SportId": 2,
+    "AwayCompetitorId": 55,
+    "HomeCompetitorId": 63,
+    "status": "CORRECT",
+    "summary": "Oklahoma City -7.5",
+    "matchTime": "2025-06-23T00:00:50.000Z",
+    "title": "2025 NBA Finals Game 7: Indiana Pacers @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    },
+    "HomeCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    }
+  },
+  {
+    "id": 2403,
+    "SportId": 2,
+    "AwayCompetitorId": 63,
+    "HomeCompetitorId": 55,
+    "status": "CORRECT",
+    "summary": "Indiana +4.5",
+    "matchTime": "2025-06-20T00:30:41.000Z",
+    "title": "2025 NBA Finals Game 6: Oklahoma City Thunder @ Indiana Pacers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    },
+    "HomeCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    }
+  },
+  {
+    "id": 2402,
+    "SportId": 2,
+    "AwayCompetitorId": 55,
+    "HomeCompetitorId": 63,
+    "status": "CORRECT",
+    "summary": "Over 224.5 total points ",
+    "matchTime": "2025-06-17T00:30:03.000Z",
+    "title": "2025 NBA Playoffs Game 5: Indiana Pacers @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    },
+    "HomeCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    }
+  },
+  {
+    "id": 2401,
+    "SportId": 2,
+    "AwayCompetitorId": 63,
+    "HomeCompetitorId": 55,
+    "status": "CORRECT",
+    "summary": "Oklahoma City -6.5",
+    "matchTime": "2025-06-14T00:30:45.000Z",
+    "title": "2025 NBA Finals Game 4: Oklahoma City Thunder @ Indiana Pacers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    },
+    "HomeCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    }
+  },
+  {
+    "id": 2400,
+    "SportId": 2,
+    "AwayCompetitorId": 63,
+    "HomeCompetitorId": 55,
+    "status": "INCORRECT",
+    "summary": "Over 228.5 total points",
+    "matchTime": "2025-06-12T00:30:34.000Z",
+    "title": "2025 NBA Finals Game 3: Oklahoma City Thunder @ Indiana Pacers ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    },
+    "HomeCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    }
+  },
+  {
+    "id": 2398,
+    "SportId": 2,
+    "AwayCompetitorId": 55,
+    "HomeCompetitorId": 63,
+    "status": "CORRECT",
+    "summary": "Over 227.5 total points",
+    "matchTime": "2025-06-09T00:00:44.000Z",
+    "title": "2025 NBA Finals Game 2: Indiana Pacers @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    },
+    "HomeCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    }
+  },
+  {
+    "id": 2399,
+    "SportId": 19,
+    "AwayCompetitorId": 483,
+    "HomeCompetitorId": 478,
+    "status": "CORRECT",
+    "summary": "Over 40.5 total games",
+    "matchTime": "2025-06-08T13:00:28.000Z",
+    "title": "2025 French Open Final: Jannik Sinner vs Carlos Alcaraz",
+    "SportFld": {
+      "id": 19,
+      "shortTitle": "ATP",
+      "title": "Tennis"
+    },
+    "AwayCompetitorFld": {
+      "id": 483,
+      "logo": "blob-276",
+      "name": "Jannik Sinner"
+    },
+    "HomeCompetitorFld": {
+      "id": 478,
+      "logo": "blob-692",
+      "name": "Carlos Alcaraz"
+    }
+  },
+  {
+    "id": 2397,
+    "SportId": 2,
+    "AwayCompetitorId": 62,
+    "HomeCompetitorId": 55,
+    "status": "CORRECT",
+    "summary": "Indiana -3.5",
+    "matchTime": "2025-06-01T00:00:32.000Z",
+    "title": "2025 NBA Playoffs East Finals Game 6: New York Knicks @ Indiana Pacers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    },
+    "HomeCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    }
+  },
+  {
+    "id": 2396,
+    "SportId": 2,
+    "AwayCompetitorId": 58,
+    "HomeCompetitorId": 63,
+    "status": "CORRECT",
+    "summary": "Oklahoma City -8.5",
+    "matchTime": "2025-05-29T00:30:26.000Z",
+    "title": "2025 NBA Playoffs West Finals Game 5: Minnesota Timberwolves @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    },
+    "HomeCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    }
+  },
+  {
+    "id": 2394,
+    "SportId": 2,
+    "AwayCompetitorId": 62,
+    "HomeCompetitorId": 55,
+    "status": "CORRECT",
+    "summary": "Over 220.5 total points",
+    "matchTime": "2025-05-28T00:00:37.000Z",
+    "title": "2025 NBA Playoffs East Finals Game 4: New York Knicks @ Indiana Pacers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    },
+    "HomeCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    }
+  },
+  {
+    "id": 2395,
+    "SportId": 2,
+    "AwayCompetitorId": 63,
+    "HomeCompetitorId": 58,
+    "status": "INCORRECT",
+    "summary": "Under 218.5 total points",
+    "matchTime": "2025-05-27T00:30:12.000Z",
+    "title": "2025 NBA Playoffs West Finals Game 4: Oklahoma City Thunder @ Minnesota Timberwolves",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    },
+    "HomeCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    }
+  },
+  {
+    "id": 2393,
+    "SportId": 2,
+    "AwayCompetitorId": 62,
+    "HomeCompetitorId": 55,
+    "status": "CORRECT",
+    "summary": "New York to win",
+    "matchTime": "2025-05-26T00:00:10.000Z",
+    "title": "2025 NBA Playoffs East Finals Game 3: New York Knicks @ Indiana Pacers ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    },
+    "HomeCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    }
+  },
+  {
+    "id": 2392,
+    "SportId": 2,
+    "AwayCompetitorId": 58,
+    "HomeCompetitorId": 63,
+    "status": "INCORRECT",
+    "summary": "Minnesota +7.5",
+    "matchTime": "2025-05-23T00:30:01.000Z",
+    "title": "2025 NBA Playoffs West Finals Game 2: Minnesota Timberwolves @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    },
+    "HomeCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    }
+  },
+  {
+    "id": 2391,
+    "SportId": 2,
+    "AwayCompetitorId": 55,
+    "HomeCompetitorId": 62,
+    "status": "CORRECT",
+    "summary": "Over 223.5 total points",
+    "matchTime": "2025-05-22T00:00:39.000Z",
+    "title": "2025 NBA Playoffs East Finals Game 1: Indiana Pacers @ New York Knicks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    },
+    "HomeCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    }
+  },
+  {
+    "id": 2390,
+    "SportId": 2,
+    "AwayCompetitorId": 58,
+    "HomeCompetitorId": 63,
+    "status": "CORRECT",
+    "summary": "Oklahoma City Thunder -7.5",
+    "matchTime": "2025-05-21T00:30:45.000Z",
+    "title": "2025 NBA Playoffs West Finals Game 1: Minnesota Timberwolves @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    },
+    "HomeCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    }
+  },
+  {
+    "id": 2388,
+    "SportId": 2,
+    "AwayCompetitorId": 63,
+    "HomeCompetitorId": 51,
+    "status": "INCORRECT",
+    "summary": "Under 212.5 total points ",
+    "matchTime": "2025-05-18T19:30:42.000Z",
+    "title": "2025 NBA Playoffs West semis Game 7: Denver Nuggets @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    },
+    "HomeCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    }
+  },
+  {
+    "id": 2389,
+    "SportId": 2,
+    "AwayCompetitorId": 46,
+    "HomeCompetitorId": 62,
+    "status": "CORRECT",
+    "summary": "New York -2.5",
+    "matchTime": "2025-05-17T00:00:20.000Z",
+    "title": "2025 NBA Playoffs East semis Game 6: Boston Celtics @ New York Knicks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    },
+    "HomeCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    }
+  },
+  {
+    "id": 2387,
+    "SportId": 2,
+    "AwayCompetitorId": 63,
+    "HomeCompetitorId": 51,
+    "status": "CORRECT",
+    "summary": "Denver +4.5",
+    "matchTime": "2025-05-16T00:30:46.000Z",
+    "title": "2025 NBA Playoffs West semis Game 6: Oklahoma City Thunder @ Denver Nuggets",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    },
+    "HomeCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    }
+  },
+  {
+    "id": 2386,
+    "SportId": 2,
+    "AwayCompetitorId": 53,
+    "HomeCompetitorId": 58,
+    "status": "INCORRECT",
+    "summary": "Golden State +10.5",
+    "matchTime": "2025-05-15T01:30:01.000Z",
+    "title": "2025 NBA Playoffs West semis Game 5: Golden State Warriors @ Minnesota Timberwolves",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    },
+    "HomeCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    }
+  },
+  {
+    "id": 2385,
+    "SportId": 2,
+    "AwayCompetitorId": 62,
+    "HomeCompetitorId": 46,
+    "status": "CORRECT",
+    "summary": "Boston -4.5",
+    "matchTime": "2025-05-14T23:00:43.000Z",
+    "title": "2025 NBA Playoffs East semis Game 5: New York Knicks @ Boston Celtics ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2383,
+    "SportId": 2,
+    "AwayCompetitorId": 58,
+    "HomeCompetitorId": 53,
+    "status": "CORRECT",
+    "summary": "Over 200.5 total points",
+    "matchTime": "2025-05-13T02:00:20.000Z",
+    "title": "2025 NBA Playoffs West semis Game 4: Minnesota Timberwolves @ Golden State Warriors ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    },
+    "HomeCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    }
+  },
+  {
+    "id": 2384,
+    "SportId": 2,
+    "AwayCompetitorId": 46,
+    "HomeCompetitorId": 62,
+    "status": "CORRECT",
+    "summary": "New York +6.5",
+    "matchTime": "2025-05-12T23:30:45.000Z",
+    "title": "2025 NBA Playoffs East semis Game 4: Boston Celtics @ New York Knicks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    },
+    "HomeCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    }
+  },
+  {
+    "id": 2382,
+    "SportId": 2,
+    "AwayCompetitorId": 58,
+    "HomeCompetitorId": 53,
+    "status": "INCORRECT",
+    "summary": "Over 200.5 total points",
+    "matchTime": "2025-05-11T00:30:53.000Z",
+    "title": "2025 NBA Playoffs West semis Game 3: Minnesota Timberwolves @ Golden State Warriors",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    },
+    "HomeCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    }
+  },
+  {
+    "id": 2381,
+    "SportId": 2,
+    "AwayCompetitorId": 46,
+    "HomeCompetitorId": 62,
+    "status": "CORRECT",
+    "summary": "Over 204.5 total points ",
+    "matchTime": "2025-05-10T19:30:18.000Z",
+    "title": "2025 NBA Playoffs East semis Game 3: Boston Celtics @ New York Knicks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    },
+    "HomeCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    }
+  },
+  {
+    "id": 2380,
+    "SportId": 2,
+    "AwayCompetitorId": 48,
+    "HomeCompetitorId": 55,
+    "status": "INCORRECT",
+    "summary": "Indiana +3.5",
+    "matchTime": "2025-05-09T23:30:50.000Z",
+    "title": "2025 NBA Playoffs East semis Game 3: Cleveland Cavaliers @ Indiana Pacers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 48,
+      "logo": "cleveland-cavaliers.png",
+      "name": "Cleveland Cavaliers"
+    },
+    "HomeCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    }
+  },
+  {
+    "id": 2378,
+    "SportId": 2,
+    "AwayCompetitorId": 62,
+    "HomeCompetitorId": 46,
+    "status": "CORRECT",
+    "summary": "Under 211.5 total points",
+    "matchTime": "2025-05-07T23:00:47.000Z",
+    "title": "2025 NBA Playoffs East semis Game 2: New York Knicks @ Boston Celtics",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2377,
+    "SportId": 2,
+    "AwayCompetitorId": 53,
+    "HomeCompetitorId": 58,
+    "status": "CORRECT",
+    "summary": "Golden State +6.5",
+    "matchTime": "2025-05-07T01:30:35.000Z",
+    "title": "2025 NBA Playoffs West semis Game 1: Golden State Warriors @ Minnesota Timberwolves",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    },
+    "HomeCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    }
+  },
+  {
+    "id": 2376,
+    "SportId": 2,
+    "AwayCompetitorId": 55,
+    "HomeCompetitorId": 48,
+    "status": "INCORRECT",
+    "summary": "Under 229.5 total points ",
+    "matchTime": "2025-05-06T23:00:21.000Z",
+    "title": "2025 NBA Playoffs East semis Game 2: Indiana Pacers @ Cleveland Cavaliers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    },
+    "HomeCompetitorFld": {
+      "id": 48,
+      "logo": "cleveland-cavaliers.png",
+      "name": "Cleveland Cavaliers"
+    }
+  },
+  {
+    "id": 2375,
+    "SportId": 2,
+    "AwayCompetitorId": 62,
+    "HomeCompetitorId": 46,
+    "status": "CORRECT",
+    "summary": "Over 212.5 total points ",
+    "matchTime": "2025-05-05T23:00:43.000Z",
+    "title": "2025 NBA Playoffs East semis Game 1: New York Knicks @ Boston Celtics ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2374,
+    "SportId": 2,
+    "AwayCompetitorId": 53,
+    "HomeCompetitorId": 54,
+    "status": "CORRECT",
+    "summary": "Golden State to win",
+    "matchTime": "2025-05-05T00:30:11.000Z",
+    "title": "2025 NBA Playoffs 1st round Game 7: Golden State Warriors (7) @ Houston Rockets (2)",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    },
+    "HomeCompetitorFld": {
+      "id": 54,
+      "logo": "houston-rockets.png",
+      "name": "Houston Rockets"
+    }
+  },
+  {
+    "id": 2373,
+    "SportId": 2,
+    "AwayCompetitorId": 56,
+    "HomeCompetitorId": 51,
+    "status": "CORRECT",
+    "summary": "Denver to win",
+    "matchTime": "2025-05-03T23:30:07.000Z",
+    "title": "2025 NBA Playoffs 1st round Game 7: Los Angeles Clippers @ Denver Nuggets",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 56,
+      "logo": "l-a-clippers.png",
+      "name": "L.A Clippers"
+    },
+    "HomeCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    }
+  },
+  {
+    "id": 2372,
+    "SportId": 2,
+    "AwayCompetitorId": 53,
+    "HomeCompetitorId": 54,
+    "status": "CORRECT",
+    "summary": "Over 203.5 total points",
+    "matchTime": "2025-04-30T23:30:57.000Z",
+    "title": "2025 NBA Playoffs 1st round Game 5: Golden State Warriors @ Houston Rockets",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    },
+    "HomeCompetitorFld": {
+      "id": 54,
+      "logo": "houston-rockets.png",
+      "name": "Houston Rockets"
+    }
+  },
+  {
+    "id": 2371,
+    "SportId": 2,
+    "AwayCompetitorId": 56,
+    "HomeCompetitorId": 51,
+    "status": "CORRECT",
+    "summary": "Over 208.5 total points",
+    "matchTime": "2025-04-30T02:00:14.000Z",
+    "title": "2025 NBA Playoffs 1st round Game 5: Los Angeles Clippers @ Denver Nuggets",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 56,
+      "logo": "l-a-clippers.png",
+      "name": "L.A Clippers"
+    },
+    "HomeCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    }
+  },
+  {
+    "id": 2370,
+    "SportId": 2,
+    "AwayCompetitorId": 51,
+    "HomeCompetitorId": 56,
+    "status": "INCORRECT",
+    "summary": "Over 211.5 total points",
+    "matchTime": "2025-04-26T22:00:37.000Z",
+    "title": "2025 NBA Playoffs 1st round Game 4: Denver Nuggets @ Los Angeles Clippers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    },
+    "HomeCompetitorFld": {
+      "id": 56,
+      "logo": "l-a-clippers.png",
+      "name": "L.A Clippers"
+    }
+  },
+  {
+    "id": 2369,
+    "SportId": 2,
+    "AwayCompetitorId": 50,
+    "HomeCompetitorId": 66,
+    "status": "CORRECT",
+    "summary": "Over 213.5 total points",
+    "matchTime": "2025-04-17T02:30:40.000Z",
+    "title": "2025 NBA Play-in: Dallas Mavericks (10) @ Sacramento Kings (9)",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    },
+    "HomeCompetitorFld": {
+      "id": 66,
+      "logo": "sacramento-kings.png",
+      "name": "Sacramento Kings"
+    }
+  },
+  {
+    "id": 2368,
+    "SportId": 2,
+    "AwayCompetitorId": 45,
+    "HomeCompetitorId": 88,
+    "status": "CORRECT",
+    "summary": "Under 218.5 total points",
+    "matchTime": "2025-04-15T23:30:20.000Z",
+    "title": "2025 NBA Play-in: Atlanta Hawks (8) @ Orlando Magic (7)",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 45,
+      "logo": "atlanta-hawks.png",
+      "name": "Atlanta Hawks"
+    },
+    "HomeCompetitorFld": {
+      "id": 88,
+      "logo": "orlando-magic.png",
+      "name": "Orlando Magic"
+    }
+  },
+  {
+    "id": 2366,
+    "SportId": 2,
+    "AwayCompetitorId": 46,
+    "HomeCompetitorId": 62,
+    "status": "CORRECT",
+    "summary": "Over 221.5 total points",
+    "matchTime": "2025-04-09T11:30:30.000Z",
+    "title": "Boston Celtics @ New York Knicks ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    },
+    "HomeCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    }
+  },
+  {
+    "id": 2365,
+    "SportId": 2,
+    "AwayCompetitorId": 61,
+    "HomeCompetitorId": 57,
+    "status": "CORRECT",
+    "summary": "Over 221.5 total points",
+    "matchTime": "2025-04-05T02:40:53.000Z",
+    "title": "New Orleans Pelicans @ Los Angeles Lakers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 61,
+      "logo": "new-orleans-pelicans.png",
+      "name": "New Orleans Pelicans"
+    },
+    "HomeCompetitorFld": {
+      "id": 57,
+      "logo": "l-a-lakers.png",
+      "name": "L.A Lakers"
+    }
+  },
+  {
+    "id": 2363,
+    "SportId": 2,
+    "AwayCompetitorId": 63,
+    "HomeCompetitorId": 54,
+    "status": "CORRECT",
+    "summary": "Over 228.5 total points",
+    "matchTime": "2025-04-05T00:10:55.000Z",
+    "title": "Oklahoma City Thunder @ Houston Rockets",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    },
+    "HomeCompetitorFld": {
+      "id": 54,
+      "logo": "houston-rockets.png",
+      "name": "Houston Rockets"
+    }
+  },
+  {
+    "id": 2364,
+    "SportId": 2,
+    "AwayCompetitorId": 48,
+    "HomeCompetitorId": 44,
+    "status": "CORRECT",
+    "summary": "Under 241.5 total points",
+    "matchTime": "2025-04-05T00:10:08.000Z",
+    "title": "Cleveland Cavaliers @ San Antonio Spurs ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 48,
+      "logo": "cleveland-cavaliers.png",
+      "name": "Cleveland Cavaliers"
+    },
+    "HomeCompetitorFld": {
+      "id": 44,
+      "logo": "san-antonio-spurs.png",
+      "name": "San Antonio Spurs"
+    }
+  },
+  {
+    "id": 2362,
+    "SportId": 2,
+    "AwayCompetitorId": 59,
+    "HomeCompetitorId": 46,
+    "status": "CORRECT",
+    "summary": "Over 211.5 total points",
+    "matchTime": "2025-04-02T23:40:53.000Z",
+    "title": "Miami Heat @ Boston Celtics ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 59,
+      "logo": "miami-heat.png",
+      "name": "Miami Heat"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2359,
+    "SportId": 2,
+    "AwayCompetitorId": 52,
+    "HomeCompetitorId": 59,
+    "status": "CORRECT",
+    "summary": "Miami +5.5",
+    "matchTime": "2025-03-19T23:40:07.000Z",
+    "title": "Detroit Pistons @ Miami Heat",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 52,
+      "logo": "detroit-pistons.png",
+      "name": "Detroit Pistons"
+    },
+    "HomeCompetitorFld": {
+      "id": 59,
+      "logo": "miami-heat.png",
+      "name": "Miami Heat"
+    }
+  },
+  {
+    "id": 2357,
+    "SportId": 2,
+    "AwayCompetitorId": 48,
+    "HomeCompetitorId": 3,
+    "status": "INCORRECT",
+    "summary": "Memphis +2.5",
+    "matchTime": "2025-03-15T00:00:14.000Z",
+    "title": "Cleveland Cavaliers @ Memphis Grizzlies",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 48,
+      "logo": "cleveland-cavaliers.png",
+      "name": "Cleveland Cavaliers"
+    },
+    "HomeCompetitorFld": {
+      "id": 3,
+      "logo": "memphis-grizzlies.png",
+      "name": "Memphis Grizzlies"
+    }
+  },
+  {
+    "id": 2358,
+    "SportId": 2,
+    "AwayCompetitorId": 50,
+    "HomeCompetitorId": 54,
+    "status": "INCORRECT",
+    "summary": "Dallas +12",
+    "matchTime": "2025-03-15T00:00:02.000Z",
+    "title": "Dallas Mavericks @ Houston Rockets ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    },
+    "HomeCompetitorFld": {
+      "id": 54,
+      "logo": "houston-rockets.png",
+      "name": "Houston Rockets"
+    }
+  },
+  {
+    "id": 2356,
+    "SportId": 2,
+    "AwayCompetitorId": 56,
+    "HomeCompetitorId": 59,
+    "status": "CORRECT",
+    "summary": "Over 206.5 total points",
+    "matchTime": "2025-03-13T00:00:40.000Z",
+    "title": "Los Angeles Clippers @ Miami Heat ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 56,
+      "logo": "l-a-clippers.png",
+      "name": "L.A Clippers"
+    },
+    "HomeCompetitorFld": {
+      "id": 59,
+      "logo": "miami-heat.png",
+      "name": "Miami Heat"
+    }
+  },
+  {
+    "id": 2355,
+    "SportId": 2,
+    "AwayCompetitorId": 60,
+    "HomeCompetitorId": 45,
+    "status": "CORRECT",
+    "summary": "Atlanta +6.5",
+    "matchTime": "2025-03-05T00:40:27.000Z",
+    "title": "Milwaukee Bucks @ Atlanta Hawks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 60,
+      "logo": "milwaukee-bucks.png",
+      "name": "Milwaukee Bucks"
+    },
+    "HomeCompetitorFld": {
+      "id": 45,
+      "logo": "atlanta-hawks.png",
+      "name": "Atlanta Hawks"
+    }
+  },
+  {
+    "id": 2354,
+    "SportId": 2,
+    "AwayCompetitorId": 55,
+    "HomeCompetitorId": 59,
+    "status": "CORRECT",
+    "summary": "Miami +4.5",
+    "matchTime": "2025-03-01T01:10:52.000Z",
+    "title": "Indiana Pacers @ Miami Heat",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    },
+    "HomeCompetitorFld": {
+      "id": 59,
+      "logo": "miami-heat.png",
+      "name": "Miami Heat"
+    }
+  },
+  {
+    "id": 2353,
+    "SportId": 2,
+    "AwayCompetitorId": 51,
+    "HomeCompetitorId": 52,
+    "status": "CORRECT",
+    "summary": "Denver to win",
+    "matchTime": "2025-03-01T00:00:48.000Z",
+    "title": "Denver Nuggets @ Detroit Pistons ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    },
+    "HomeCompetitorFld": {
+      "id": 52,
+      "logo": "detroit-pistons.png",
+      "name": "Detroit Pistons"
+    }
+  },
+  {
+    "id": 2351,
+    "SportId": 2,
+    "AwayCompetitorId": 58,
+    "HomeCompetitorId": 57,
+    "status": "CORRECT",
+    "summary": "Lakers -5.5",
+    "matchTime": "2025-02-28T03:40:37.000Z",
+    "title": "Minnesota Timberwolves @ Los Angeles Lakers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    },
+    "HomeCompetitorFld": {
+      "id": 57,
+      "logo": "l-a-lakers.png",
+      "name": "L.A Lakers"
+    }
+  },
+  {
+    "id": 2352,
+    "SportId": 2,
+    "AwayCompetitorId": 51,
+    "HomeCompetitorId": 60,
+    "status": "CORRECT",
+    "summary": "Milwaukee +3.5",
+    "matchTime": "2025-02-28T01:10:19.000Z",
+    "title": "Denver Nuggets @ Milwaukee Bucks ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    },
+    "HomeCompetitorFld": {
+      "id": 60,
+      "logo": "milwaukee-bucks.png",
+      "name": "Milwaukee Bucks"
+    }
+  },
+  {
+    "id": 2350,
+    "SportId": 2,
+    "AwayCompetitorId": 68,
+    "HomeCompetitorId": 57,
+    "status": "INCORRECT",
+    "summary": "Utah +13.5",
+    "matchTime": "2025-02-11T03:30:46.000Z",
+    "title": "Utah Jazz @ Los Angeles Lakers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 68,
+      "logo": "utah-jazz.png",
+      "name": "Utah Jazz"
+    },
+    "HomeCompetitorFld": {
+      "id": 57,
+      "logo": "l-a-lakers.png",
+      "name": "L.A Lakers"
+    }
+  },
+  {
+    "id": 2349,
+    "SportId": 1,
+    "AwayCompetitorId": 304,
+    "HomeCompetitorId": 283,
+    "status": "INCORRECT",
+    "summary": "Kansas City -1.5",
+    "matchTime": "2025-02-09T23:30:08.000Z",
+    "title": "Super Bowl 59: Kansas City Chiefs vs Philadelphia Eagles",
+    "SportFld": {
+      "id": 1,
+      "shortTitle": "NFL",
+      "title": "National Football League"
+    },
+    "AwayCompetitorFld": {
+      "id": 304,
+      "logo": "philadelphia-eagles.svg",
+      "name": "Philadelphia Eagles"
+    },
+    "HomeCompetitorFld": {
+      "id": 283,
+      "logo": "kansas-city-chiefs.png",
+      "name": "Kansas City Chiefs"
+    }
+  },
+  {
+    "id": 2348,
+    "SportId": 2,
+    "AwayCompetitorId": 66,
+    "HomeCompetitorId": 4,
+    "status": "CORRECT",
+    "summary": "Portland to win",
+    "matchTime": "2025-02-07T03:10:36.000Z",
+    "title": "Sacramento Kings @ Portland Trail Blazers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 66,
+      "logo": "sacramento-kings.png",
+      "name": "Sacramento Kings"
+    },
+    "HomeCompetitorFld": {
+      "id": 4,
+      "logo": "portland-trailblazers.png",
+      "name": "Portland Trail Blazers"
+    }
+  },
+  {
+    "id": 2347,
+    "SportId": 2,
+    "AwayCompetitorId": 64,
+    "HomeCompetitorId": 4,
+    "status": "CORRECT",
+    "summary": "Portland +5",
+    "matchTime": "2025-02-04T03:00:21.000Z",
+    "title": "Phoenix Suns @ Portland Trail Blazers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 64,
+      "logo": "phoenix-suns.png",
+      "name": "Phoenix Suns"
+    },
+    "HomeCompetitorFld": {
+      "id": 4,
+      "logo": "portland-trailblazers.png",
+      "name": "Portland Trail Blazers"
+    }
+  },
+  {
+    "id": 2346,
+    "SportId": 1,
+    "AwayCompetitorId": 2,
+    "HomeCompetitorId": 283,
+    "status": "CORRECT",
+    "summary": "Kansas City -1.5",
+    "matchTime": "2025-01-26T23:30:10.000Z",
+    "title": "AFC Championship: Buffalo Bills @ Kansas City Chiefs",
+    "SportFld": {
+      "id": 1,
+      "shortTitle": "NFL",
+      "title": "National Football League"
+    },
+    "AwayCompetitorFld": {
+      "id": 2,
+      "logo": "buffalo-bills.png",
+      "name": "Buffalo Bills"
+    },
+    "HomeCompetitorFld": {
+      "id": 283,
+      "logo": "kansas-city-chiefs.png",
+      "name": "Kansas City Chiefs"
+    }
+  },
+  {
+    "id": 2343,
+    "SportId": 2,
+    "AwayCompetitorId": 48,
+    "HomeCompetitorId": 63,
+    "status": "CORRECT",
+    "summary": "Oklahoma City -2.5",
+    "matchTime": "2025-01-17T00:30:20.000Z",
+    "title": "Cleveland Cavaliers @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 48,
+      "logo": "cleveland-cavaliers.png",
+      "name": "Cleveland Cavaliers"
+    },
+    "HomeCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    }
+  },
+  {
+    "id": 2342,
+    "SportId": 2,
+    "AwayCompetitorId": 54,
+    "HomeCompetitorId": 51,
+    "status": "CORRECT",
+    "summary": "Houston -1.5",
+    "matchTime": "2025-01-16T02:00:00.000Z",
+    "title": "Houston Rockets @ Denver Nuggets",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 54,
+      "logo": "houston-rockets.png",
+      "name": "Houston Rockets"
+    },
+    "HomeCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    }
+  },
+  {
+    "id": 2340,
+    "SportId": 2,
+    "AwayCompetitorId": 66,
+    "HomeCompetitorId": 46,
+    "status": "INCORRECT",
+    "summary": "Over 225.5 total points",
+    "matchTime": "2025-01-11T00:30:01.000Z",
+    "title": "Sacramento Kings @ Boston Celtics ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 66,
+      "logo": "sacramento-kings.png",
+      "name": "Sacramento Kings"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2341,
+    "SportId": 2,
+    "AwayCompetitorId": 63,
+    "HomeCompetitorId": 62,
+    "status": "CORRECT",
+    "summary": "Over 224.5 total points",
+    "matchTime": "2025-01-11T00:30:00.000Z",
+    "title": "Oklahoma City Thunder @ New York Knicks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    },
+    "HomeCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    }
+  },
+  {
+    "id": 2339,
+    "SportId": 2,
+    "AwayCompetitorId": 66,
+    "HomeCompetitorId": 53,
+    "status": "CORRECT",
+    "summary": "Over 225.5 total points",
+    "matchTime": "2025-01-06T01:40:22.000Z",
+    "title": "Sacramento Kings @ Golden State Warriors ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 66,
+      "logo": "sacramento-kings.png",
+      "name": "Sacramento Kings"
+    },
+    "HomeCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    }
+  },
+  {
+    "id": 2336,
+    "SportId": 2,
+    "AwayCompetitorId": 55,
+    "HomeCompetitorId": 66,
+    "status": "CORRECT",
+    "summary": "Indiana +2.5",
+    "matchTime": "2024-12-22T23:00:14.000Z",
+    "title": "Indiana Pacers @ Sacramento Kings",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    },
+    "HomeCompetitorFld": {
+      "id": 66,
+      "logo": "sacramento-kings.png",
+      "name": "Sacramento Kings"
+    }
+  },
+  {
+    "id": 2335,
+    "SportId": 2,
+    "AwayCompetitorId": 51,
+    "HomeCompetitorId": 4,
+    "status": "CORRECT",
+    "summary": "Over 232.5 total points",
+    "matchTime": "2024-12-20T03:10:58.000Z",
+    "title": "Denver Nuggets @ Portland Trail Blazers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    },
+    "HomeCompetitorFld": {
+      "id": 4,
+      "logo": "portland-trailblazers.png",
+      "name": "Portland Trail Blazers"
+    }
+  },
+  {
+    "id": 2334,
+    "SportId": 2,
+    "AwayCompetitorId": 47,
+    "HomeCompetitorId": 43,
+    "status": "CORRECT",
+    "summary": "Under 232.5 total points",
+    "matchTime": "2024-12-13T13:10:44.000Z",
+    "title": "Charlotte Hornets @ Chicago Bulls",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 47,
+      "logo": "charlotte-hornets.png",
+      "name": "Charlotte Hornets"
+    },
+    "HomeCompetitorFld": {
+      "id": 43,
+      "logo": "chicago-bulls.png",
+      "name": "Chicago Bulls"
+    }
+  },
+  {
+    "id": 2333,
+    "SportId": 2,
+    "AwayCompetitorId": 66,
+    "HomeCompetitorId": 61,
+    "status": "CORRECT",
+    "summary": "New Orleans +6.5",
+    "matchTime": "2024-12-13T01:00:14.000Z",
+    "title": "Sacramento Kings @ New Orleans Pelicans",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 66,
+      "logo": "sacramento-kings.png",
+      "name": "Sacramento Kings"
+    },
+    "HomeCompetitorFld": {
+      "id": 61,
+      "logo": "new-orleans-pelicans.png",
+      "name": "New Orleans Pelicans"
+    }
+  },
+  {
+    "id": 2332,
+    "SportId": 2,
+    "AwayCompetitorId": 53,
+    "HomeCompetitorId": 54,
+    "status": "INCORRECT",
+    "summary": "Houston -2.0",
+    "matchTime": "2024-12-12T02:30:46.000Z",
+    "title": "Golden State Warriors @ Houston Rockets ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    },
+    "HomeCompetitorFld": {
+      "id": 54,
+      "logo": "houston-rockets.png",
+      "name": "Houston Rockets"
+    }
+  },
+  {
+    "id": 2331,
+    "SportId": 2,
+    "AwayCompetitorId": 50,
+    "HomeCompetitorId": 63,
+    "status": "CORRECT",
+    "summary": "Under 230.5 total points",
+    "matchTime": "2024-12-11T02:30:13.000Z",
+    "title": "Dallas Mavericks @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    },
+    "HomeCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    }
+  },
+  {
+    "id": 2330,
+    "SportId": 2,
+    "AwayCompetitorId": 62,
+    "HomeCompetitorId": 67,
+    "status": "CORRECT",
+    "summary": "Toronto +6.5",
+    "matchTime": "2024-12-10T00:30:39.000Z",
+    "title": "New York Knicks @ Toronto Raptors",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    },
+    "HomeCompetitorFld": {
+      "id": 67,
+      "logo": "toronto-raptors.png",
+      "name": "Toronto Raptors"
+    }
+  },
+  {
+    "id": 2329,
+    "SportId": 2,
+    "AwayCompetitorId": 58,
+    "HomeCompetitorId": 53,
+    "status": "CORRECT",
+    "summary": "Golden State to win",
+    "matchTime": "2024-12-09T01:40:58.000Z",
+    "title": "Minnesota Timberwolves @ Golden State Warriors ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    },
+    "HomeCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    }
+  },
+  {
+    "id": 2328,
+    "SportId": 2,
+    "AwayCompetitorId": 51,
+    "HomeCompetitorId": 45,
+    "status": "CORRECT",
+    "summary": "Denver to win",
+    "matchTime": "2024-12-08T23:00:00.000Z",
+    "title": "Denver Nuggets @ Atlanta Hawks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    },
+    "HomeCompetitorFld": {
+      "id": 45,
+      "logo": "atlanta-hawks.png",
+      "name": "Atlanta Hawks"
+    }
+  },
+  {
+    "id": 2327,
+    "SportId": 2,
+    "AwayCompetitorId": 54,
+    "HomeCompetitorId": 53,
+    "status": "CORRECT",
+    "summary": "Golden State +4.5",
+    "matchTime": "2024-12-06T03:00:54.000Z",
+    "title": "Houston Rockets @ Golden State Warriors",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 54,
+      "logo": "houston-rockets.png",
+      "name": "Houston Rockets"
+    },
+    "HomeCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    }
+  },
+  {
+    "id": 2326,
+    "SportId": 2,
+    "AwayCompetitorId": 45,
+    "HomeCompetitorId": 47,
+    "status": "CORRECT",
+    "summary": "Charlotte +4.5",
+    "matchTime": "2024-11-30T23:10:26.000Z",
+    "title": "Atlanta Hawks @ Charlotte Hornets",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 45,
+      "logo": "atlanta-hawks.png",
+      "name": "Atlanta Hawks"
+    },
+    "HomeCompetitorFld": {
+      "id": 47,
+      "logo": "charlotte-hornets.png",
+      "name": "Charlotte Hornets"
+    }
+  },
+  {
+    "id": 2325,
+    "SportId": 2,
+    "AwayCompetitorId": 43,
+    "HomeCompetitorId": 69,
+    "status": "INCORRECT",
+    "summary": "Washington +4.5",
+    "matchTime": "2024-11-27T00:10:27.000Z",
+    "title": "Chicago Bulls @ Washington Wizards",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 43,
+      "logo": "chicago-bulls.png",
+      "name": "Chicago Bulls"
+    },
+    "HomeCompetitorFld": {
+      "id": 69,
+      "logo": "washington-wizards.png",
+      "name": "Washington Wizards"
+    }
+  },
+  {
+    "id": 2324,
+    "SportId": 2,
+    "AwayCompetitorId": 62,
+    "HomeCompetitorId": 68,
+    "status": "CORRECT",
+    "summary": "Utah +8.5 ",
+    "matchTime": "2024-11-23T22:10:03.000Z",
+    "title": "New York Knicks @ Utah Jazz",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    },
+    "HomeCompetitorFld": {
+      "id": 68,
+      "logo": "utah-jazz.png",
+      "name": "Utah Jazz"
+    }
+  },
+  {
+    "id": 2323,
+    "SportId": 2,
+    "AwayCompetitorId": 48,
+    "HomeCompetitorId": 46,
+    "status": "CORRECT",
+    "summary": "Cleveland +5.5",
+    "matchTime": "2024-11-20T00:10:20.000Z",
+    "title": "Cleveland Cavaliers @ Boston Celtics",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 48,
+      "logo": "cleveland-cavaliers.png",
+      "name": "Cleveland Cavaliers"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2322,
+    "SportId": 2,
+    "AwayCompetitorId": 49,
+    "HomeCompetitorId": 62,
+    "status": "INCORRECT",
+    "summary": "Over 220.5 total points",
+    "matchTime": "2024-11-18T00:10:23.000Z",
+    "title": "Brooklyn Nets @ New York Knicks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 49,
+      "logo": "brooklyn-nets.png",
+      "name": "Brooklyn Nets"
+    },
+    "HomeCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    }
+  },
+  {
+    "id": 2321,
+    "SportId": 2,
+    "AwayCompetitorId": 53,
+    "HomeCompetitorId": 63,
+    "status": "INCORRECT",
+    "summary": "Under 228.5 total points",
+    "matchTime": "2024-11-11T00:10:54.000Z",
+    "title": "Golden State Warriors @ Oklahoma City Thunder",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    },
+    "HomeCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    }
+  },
+  {
+    "id": 2320,
+    "SportId": 2,
+    "AwayCompetitorId": 56,
+    "HomeCompetitorId": 66,
+    "status": "INCORRECT",
+    "summary": "Over 223.5 total points",
+    "matchTime": "2024-11-09T03:00:46.000Z",
+    "title": "Los Angeles Clippers @ Sacramento Kings",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 56,
+      "logo": "l-a-clippers.png",
+      "name": "L.A Clippers"
+    },
+    "HomeCompetitorFld": {
+      "id": 66,
+      "logo": "sacramento-kings.png",
+      "name": "Sacramento Kings"
+    }
+  },
+  {
+    "id": 2319,
+    "SportId": 2,
+    "AwayCompetitorId": 53,
+    "HomeCompetitorId": 46,
+    "status": "CORRECT",
+    "summary": "Golden State +7.5",
+    "matchTime": "2024-11-07T00:30:00.000Z",
+    "title": "Golden State Warriors @ Boston Celtics ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 53,
+      "logo": "golden-state-warriors.png",
+      "name": "Golden State Warriors"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2318,
+    "SportId": 2,
+    "AwayCompetitorId": 44,
+    "HomeCompetitorId": 56,
+    "status": "CORRECT",
+    "summary": "Over 214.5 total points",
+    "matchTime": "2024-11-05T03:30:03.000Z",
+    "title": "San Antonio Spurs @ Los Angeles Clippers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 44,
+      "logo": "san-antonio-spurs.png",
+      "name": "San Antonio Spurs"
+    },
+    "HomeCompetitorFld": {
+      "id": 56,
+      "logo": "l-a-clippers.png",
+      "name": "L.A Clippers"
+    }
+  },
+  {
+    "id": 2317,
+    "SportId": 2,
+    "AwayCompetitorId": 46,
+    "HomeCompetitorId": 47,
+    "status": "CORRECT",
+    "summary": "Charlotte +11.5",
+    "matchTime": "2024-11-01T22:10:48.000Z",
+    "title": "Boston Celtics @ Charlotte Hornets ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    },
+    "HomeCompetitorFld": {
+      "id": 47,
+      "logo": "charlotte-hornets.png",
+      "name": "Charlotte Hornets"
+    }
+  },
+  {
+    "id": 2316,
+    "SportId": 2,
+    "AwayCompetitorId": 60,
+    "HomeCompetitorId": 3,
+    "status": "INCORRECT",
+    "summary": "Over 224.5 total points",
+    "matchTime": "2024-11-01T00:10:49.000Z",
+    "title": "Milwaukee Bucks @ Memphis Grizzlies",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 60,
+      "logo": "milwaukee-bucks.png",
+      "name": "Milwaukee Bucks"
+    },
+    "HomeCompetitorFld": {
+      "id": 3,
+      "logo": "memphis-grizzlies.png",
+      "name": "Memphis Grizzlies"
+    }
+  },
+  {
+    "id": 2312,
+    "SportId": 9,
+    "AwayCompetitorId": 479,
+    "HomeCompetitorId": 340,
+    "status": "CORRECT",
+    "summary": "Khamzat Chimaev via TKO/KO or Submission",
+    "matchTime": "2024-10-26T19:00:27.000Z",
+    "title": "UFC 308 co-main event: Khamzat Chimaev vs Robert Whittaker",
+    "SportFld": {
+      "id": 9,
+      "shortTitle": "UFC",
+      "title": "Ultimate Fighting Championship"
+    },
+    "AwayCompetitorFld": {
+      "id": 479,
+      "logo": "blob-869",
+      "name": "Khamzat Chimaev"
+    },
+    "HomeCompetitorFld": {
+      "id": 340,
+      "logo": "robert-whittaker.jpeg",
+      "name": "Robert Whittaker"
+    }
+  },
+  {
+    "id": 2315,
+    "SportId": 2,
+    "AwayCompetitorId": 64,
+    "HomeCompetitorId": 56,
+    "status": "CORRECT",
+    "summary": "Over 225.5 total points",
+    "matchTime": "2024-10-24T02:00:26.000Z",
+    "title": "Phoenix Suns @ Los Angeles Clippers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 64,
+      "logo": "phoenix-suns.png",
+      "name": "Phoenix Suns"
+    },
+    "HomeCompetitorFld": {
+      "id": 56,
+      "logo": "l-a-clippers.png",
+      "name": "L.A Clippers"
+    }
+  },
+  {
+    "id": 2314,
+    "SportId": 2,
+    "AwayCompetitorId": 60,
+    "HomeCompetitorId": 65,
+    "status": "CORRECT",
+    "summary": "Milwaukee -3.0",
+    "matchTime": "2024-10-23T23:30:34.000Z",
+    "title": "Milwaukee Bucks @ Philadelphia 76ers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 60,
+      "logo": "milwaukee-bucks.png",
+      "name": "Milwaukee Bucks"
+    },
+    "HomeCompetitorFld": {
+      "id": 65,
+      "logo": "philadelphia-76ers.png",
+      "name": "Philadelphia 76ers"
+    }
+  },
+  {
+    "id": 2313,
+    "SportId": 2,
+    "AwayCompetitorId": 55,
+    "HomeCompetitorId": 52,
+    "status": "CORRECT",
+    "summary": "Indiana -5.0",
+    "matchTime": "2024-10-23T23:00:21.000Z",
+    "title": "Indiana Pacers @ Detroit Pistons ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    },
+    "HomeCompetitorFld": {
+      "id": 52,
+      "logo": "detroit-pistons.png",
+      "name": "Detroit Pistons"
+    }
+  },
+  {
+    "id": 2311,
+    "SportId": 19,
+    "AwayCompetitorId": 478,
+    "HomeCompetitorId": 117,
+    "status": "CORRECT",
+    "summary": "Under 39.5 total games",
+    "matchTime": "2024-07-14T13:00:56.000Z",
+    "title": "2024 Wimbledon Final: Novak Djokovic vs Carlos Alcaraz",
+    "SportFld": {
+      "id": 19,
+      "shortTitle": "ATP",
+      "title": "Tennis"
+    },
+    "AwayCompetitorFld": {
+      "id": 478,
+      "logo": "blob-692",
+      "name": "Carlos Alcaraz"
+    },
+    "HomeCompetitorFld": {
+      "id": 117,
+      "logo": "novak-djokovic.jpg",
+      "name": "Novak Djokovic"
+    }
+  },
+  {
+    "id": 2310,
+    "SportId": 2,
+    "AwayCompetitorId": 50,
+    "HomeCompetitorId": 46,
+    "status": "CORRECT",
+    "summary": "Boston -6.5",
+    "matchTime": "2024-06-18T00:30:58.000Z",
+    "title": "2024 NBA Finals Game 5: Dallas Mavericks @ Boston Celtics",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2309,
+    "SportId": 2,
+    "AwayCompetitorId": 46,
+    "HomeCompetitorId": 50,
+    "status": "CORRECT",
+    "summary": "Dallas to win",
+    "matchTime": "2024-06-15T00:30:36.000Z",
+    "title": "2024 NBA Finals Game 4: Boston Celtics @ Dallas Mavericks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    },
+    "HomeCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    }
+  },
+  {
+    "id": 2308,
+    "SportId": 2,
+    "AwayCompetitorId": 46,
+    "HomeCompetitorId": 50,
+    "status": "INCORRECT",
+    "summary": "Dallas -2.5",
+    "matchTime": "2024-06-13T00:30:04.000Z",
+    "title": "2024 NBA Finals Game 3: Boston Celtics @ Dallas Mavericks ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    },
+    "HomeCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    }
+  },
+  {
+    "id": 2307,
+    "SportId": 2,
+    "AwayCompetitorId": 50,
+    "HomeCompetitorId": 46,
+    "status": "CORRECT",
+    "summary": "Luka Doncic Over 31.5 total points",
+    "matchTime": "2024-06-10T00:00:08.000Z",
+    "title": "2024 NBA Finals Game 2: Dallas Mavericks @ Boston Celtics",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2306,
+    "SportId": 2,
+    "AwayCompetitorId": 50,
+    "HomeCompetitorId": 46,
+    "status": "INCORRECT",
+    "summary": "Dallas +6",
+    "matchTime": "2024-06-07T00:30:45.000Z",
+    "title": "2024 NBA Finals Game 1: Dallas Mavericks @ Boston Celtics",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    },
+    "HomeCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    }
+  },
+  {
+    "id": 2305,
+    "SportId": 2,
+    "AwayCompetitorId": 50,
+    "HomeCompetitorId": 58,
+    "status": "CORRECT",
+    "summary": "Dallas +5",
+    "matchTime": "2024-05-31T00:30:42.000Z",
+    "title": "2024 NBA Playoffs West Finals Game 5: Dallas Mavericks @ Minnesota Timberwolves",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    },
+    "HomeCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    }
+  },
+  {
+    "id": 2304,
+    "SportId": 2,
+    "AwayCompetitorId": 58,
+    "HomeCompetitorId": 50,
+    "status": "CORRECT",
+    "summary": "Under 210.5 total points",
+    "matchTime": "2024-05-29T00:30:00.000Z",
+    "title": "2024 NBA Playoffs West Finals Game 4: Minnesota Timberwolves @ Dallas Mavericks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    },
+    "HomeCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    }
+  },
+  {
+    "id": 2303,
+    "SportId": 2,
+    "AwayCompetitorId": 46,
+    "HomeCompetitorId": 55,
+    "status": "CORRECT",
+    "summary": "Under 222.5 total points",
+    "matchTime": "2024-05-28T00:00:10.000Z",
+    "title": "2024 NBA Playoffs East Finals Game 4: Boston Celtics @ Indiana Pacers",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    },
+    "HomeCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    }
+  },
+  {
+    "id": 2302,
+    "SportId": 2,
+    "AwayCompetitorId": 46,
+    "HomeCompetitorId": 55,
+    "status": "CORRECT",
+    "summary": "Indiana +7.5",
+    "matchTime": "2024-05-26T00:30:43.000Z",
+    "title": "2024 NBA Playoffs East Finals Game 3: Boston Celtics @ Indiana Pacers ",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 46,
+      "logo": "boston-celtics.png",
+      "name": "Boston Celtics"
+    },
+    "HomeCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    }
+  },
+  {
+    "id": 2301,
+    "SportId": 2,
+    "AwayCompetitorId": 50,
+    "HomeCompetitorId": 58,
+    "status": "CORRECT",
+    "summary": "Over 206.5 total points",
+    "matchTime": "2024-05-23T00:30:11.000Z",
+    "title": "2024 NBA Western Conference Finals Game 1: Dallas Mavericks @ Minnesota Timberwolves",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    },
+    "HomeCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    }
+  },
+  {
+    "id": 2300,
+    "SportId": 2,
+    "AwayCompetitorId": 63,
+    "HomeCompetitorId": 50,
+    "status": "CORRECT",
+    "summary": "OKC +3.5",
+    "matchTime": "2024-05-19T00:00:02.000Z",
+    "title": "2024 NBA Playoffs West Semifinals Game 6: Oklahoma City Thunder @ Dallas Mavericks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 63,
+      "logo": "oklahoma-city-thunder.png",
+      "name": "Oklahoma City Thunder"
+    },
+    "HomeCompetitorFld": {
+      "id": 50,
+      "logo": "dallas-mavericks.png",
+      "name": "Dallas Mavericks"
+    }
+  },
+  {
+    "id": 2299,
+    "SportId": 2,
+    "AwayCompetitorId": 58,
+    "HomeCompetitorId": 51,
+    "status": "CORRECT",
+    "summary": "Over 206.5 total points",
+    "matchTime": "2024-05-15T02:30:40.000Z",
+    "title": "2024 NBA Playoffs West semifinals Game 5: Minnesota Timberwolves @ Denver Nuggets",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 58,
+      "logo": "minnesota-timberwolves.png",
+      "name": "Minnesota Timberwolves"
+    },
+    "HomeCompetitorFld": {
+      "id": 51,
+      "logo": "denver-nuggets.png",
+      "name": "Denver Nuggets"
+    }
+  },
+  {
+    "id": 2298,
+    "SportId": 2,
+    "AwayCompetitorId": 55,
+    "HomeCompetitorId": 62,
+    "status": "CORRECT",
+    "summary": "Indiana +6.5",
+    "matchTime": "2024-05-06T23:30:33.000Z",
+    "title": "2024 NBA Playoffs East semi-finals Game 1: Indiana Pacers @ New York Knicks",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 55,
+      "logo": "indiana-pacers.png",
+      "name": "Indiana Pacers"
+    },
+    "HomeCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    }
+  },
+  {
+    "id": 2297,
+    "SportId": 2,
+    "AwayCompetitorId": 62,
+    "HomeCompetitorId": 65,
+    "status": "CORRECT",
+    "summary": "Over 200.5 total points",
+    "matchTime": "2024-05-03T01:05:03.000Z",
+    "title": "2024 NBA Playoffs East 1st round Game 6: New York Knicks (2) @ Philadelphia 76ers (7)",
+    "SportFld": {
+      "id": 2,
+      "shortTitle": "NBA",
+      "title": "National Basketball Association"
+    },
+    "AwayCompetitorFld": {
+      "id": 62,
+      "logo": "new-york-knicks-2.png",
+      "name": "New York Knicks"
+    },
+    "HomeCompetitorFld": {
+      "id": 65,
+      "logo": "philadelphia-76ers.png",
+      "name": "Philadelphia 76ers"
+    }
+  }
+]

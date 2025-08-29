@@ -96,7 +96,6 @@
         }
         
         .btn-primary { background-color: var(--color-primary); }
-        .btn-primary:hover { opacity: 0.9; }
         .text-primary { color: var(--color-primary); }
         .bg-secondary { background-color: var(--color-secondary); }
         .text-accent { color: var(--color-accent); }
@@ -217,7 +216,7 @@
     <header class="dark:bg-gray-900 bg-white py-4 px-8 shadow-md sticky top-0 z-40">
         <div class="container mx-auto flex justify-between items-center">
             <a class="navbar-item" href="/">
-                <img style="height: 32px;" src="./assets/ESB-logo-yellow.png" />
+                <img style="height: 32px;" src="./assets/ESB-logo-yellow.png" alt="Elite Sports Bets Logo" />
             </a>
             <nav class="hidden md:flex items-center space-x-6">
                 <a href="#" class="dark:text-gray-300 hover:text-primary">Features</a>
@@ -227,15 +226,16 @@
                 <a href="#" class="dark:text-gray-300 hover:text-primary">About</a>
                 <a href="#" class="dark:text-gray-300 hover:text-primary">Contact us</a>
                 <a href="#" class="dark:text-gray-300 hover:text-primary">Login</a>
-                <a href="#" class="bg-primary text-black font-bold py-2 px-4 rounded-lg">Join Now</a>
+                <a href="#packages" class="bg-primary text-black font-bold py-2 px-4 rounded-lg">Join Now</a>
             </nav>
             <div class="md:hidden flex items-center">
-                <button id="mobile-menu-toggle" class="mr-2 focus:outline-none">
-                    <svg class="w-7 h-7 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <a href="#packages" class="bg-primary text-black font-bold py-2 px-4 rounded-lg mr-2">Join Now</a>
+                <button id="mobile-menu-toggle" class="mr-2 focus:outline-none" title="Open mobile menu">
+                    <svg class="w-7 h-7 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" title="Menu icon"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
-                <button id="theme-toggle-mobile" class="mr-2">
-                    <svg id="theme-toggle-dark-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                    <svg id="theme-toggle-light-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-1.414a1 1 0 01-.707.293h-1a1 1 0 110-2h1a1 1 0 01.707.293l.001.001zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM3.05 13.464l.707-.707a1 1 0 011.414 1.414l-.707.707a1 1 0 01-1.414-1.414zM17 10a1 1 0 01-.293.707l-.001.001a1 1 0 11-1.414-1.414l.001-.001.707-.707A1 1 0 0117 10zM4.536 4.536l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 10-1.414 1.414z"></path></svg>
+                <button id="theme-toggle-mobile" class="mr-2" title="Toggle theme">
+                    <svg id="theme-toggle-dark-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" title="Dark mode icon"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" title="Light mode icon"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-1.414a1 1 0 01-.707.293h-1a1 1 0 110-2h1a1 1 0 01.707.293l.001.001zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM3.05 13.464l.707-.707a1 1 0 011.414 1.414l-.707.707a1 1 0 01-1.414-1.414zM17 10a1 1 0 01-.293.707l-.001.001a1 1 0 11-1.414-1.414l.001-.001.707-.707A1 1 0 0117 10zM4.536 4.536l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 10-1.414 1.414z"></path></svg>
                 </button>
             </div>
         </div>
@@ -244,7 +244,7 @@
     <!-- Mobile menu (hidden by default) -->
     <nav id="mobile-menu" class="md:hidden fixed top-0 right-0 w-full h-full bg-black bg-opacity-80 z-50 hidden flex justify-end">
         <div id="mobile-menu-panel" class="bg-white dark:bg-gray-900 w-11/12 max-w-xs h-full p-8 shadow-lg flex flex-col transform translate-x-full transition-transform duration-300">
-            <button id="mobile-menu-close" class="self-end mb-8 focus:outline-none">
+            <button id="mobile-menu-close" class="self-end mb-8 focus:outline-none" title="Close mobile menu">
                 <svg class="w-7 h-7 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
             <a href="#" class="mb-4 dark:text-gray-300 hover:text-primary">Features</a>
@@ -262,23 +262,22 @@
         <section class="relative text-white text-center" style="background: url('./assets/hero.jpg') no-repeat center center; background-size: cover;">
             <div class="absolute inset-0 bg-black opacity-60"></div>
             <div class="relative container mx-auto pt-32 pb-20 px-4">
-                <h1 class="text-5xl font-bold mb-4 flex items-center justify-center gap-2">Winning with Expert NBA Tips <img src="./assets/nba-logo.svg" class="w-16 h-16 inline-block align-middle" alt="NBA Logo" /></h1>
-                <p class="text-xl mb-8">Join 1,200+ successful bettors getting data-driven NBA tips with 78% win rate and 25% ROI</p>
-                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-                    <a href="#" class="w-full md:w-auto btn-primary text-black font-extrabold text-2xl md:text-3xl py-5 px-10 rounded-xl text-center shadow-lg transition-transform duration-200 hover:scale-105">Get Winning Tips</a>
-                </div>
-            </div>
+                <h1 class="text-4xl font-bold mb-4 flex items-center justify-center gap-2">Winning with Expert NBA Tips <img src="./assets/nba-logo.svg" class="w-16 h-16 inline-block align-middle" alt="NBA Logo" /></h1>
+                <p id="hero-text" class="text-l mb-8">Gain an unbeatable edge with our expert, data-driven basketball tips. We do the research, you collect the winnings.</p> 
 
             <div class="relative container mx-auto gutters pb-16">
-                <h2 class="text-3xl font-bold text-center mb-2">Live Performance Stats</h2>
-                <p class="text-center text-gray-400 mb-8">Real-time results from our expert tipsters</p>
-                <div class="dark grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-                    <div class="card p-6 stat-hover"><p class="text-4xl stat-number text-success">78%</p><p>Win Rate</p></div>
-                    <div class="card p-6 stat-hover"><p class="text-4xl stat-number text-primary">+25%</p><p>Average ROI</p></div>
-                    <div class="card p-6 stat-hover"><p class="text-4xl stat-number text-accent">12</p><p>Win Streak</p></div>
-                    <div class="card p-6 stat-hover"><p class="text-4xl stat-number">1,200+</p><p>Active Members</p></div>
+                <div class="grid grid-cols-2 gap-4 text-center md:grid-cols-2 lg:grid-cols-4">
+                    <div class="card p-6 stat-hover min-w-[160px] flex-1"><p id="win-rate" class="text-4xl stat-number text-success">78%</p><p>Win Rate</p></div>
+                    <div class="card p-6 stat-hover min-w-[160px] flex-1"><p id="average-roi" class="text-4xl stat-number text-primary">+25%</p><p>Average ROI</p></div>
+                    <div class="card p-6 stat-hover min-w-[160px] flex-1"><p id="win-streak" class="text-4xl stat-number text-accent">12</p><p>Win Streak</p></div>
+                    <div class="card p-6 stat-hover min-w-[160px] flex-1"><p id="active-members" class="text-4xl stat-number">1,200+</p><p>Members</p></div>
                 </div>
             </div>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#packages" class="w-full md:w-auto btn-primary text-black font-extrabold text-xl md:text-3xl py-5 px-10 rounded-xl text-center">Get Winning Tips</a>
+            </div>
+            </div>
+
         </section>
 
         <section id="how-it-works" class="section-spacing container mx-auto gutters text-center">
@@ -309,29 +308,29 @@
             </div>
         </section>
 
-        <section id="pricing" class="section-spacing container mx-auto gutters">
-            <h2 class="text-3xl font-bold text-center mb-2">PRICING</h2>
+        <section id="packages" class="section-spacing container mx-auto gutters">
+            <h2 class="text-3xl font-bold text-center mb-2">Choose Your Path to Victory</h2>
             <p class="text-center  mb-8">First time customer? Try our standard trade. Looking to get more out of Elite Sports Bets? Go Gold!</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="card pricing-card bronze p-6 flex flex-col">
+            <div id="package-carousel" class="flex flex-row gap-4 overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-x-visible md:snap-none">
+                <div class="card pricing-card bronze p-6 flex flex-col min-w-[260px] snap-start">
                     <h3 class="text-xl font-bold">Bronze</h3>
                     <p class="text-4xl font-bold my-4 price">$120</p>
                     <p class="dark:text-gray-400 text-gray-300">Five (5) GUARANTEED individual sports trade credits.</p>
                     <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6">Choose</a>
                 </div>
-                <div class="card pricing-card silver p-6 flex flex-col">
+                <div class="card pricing-card silver p-6 flex flex-col min-w-[260px] snap-start">
                     <h3 class="text-xl font-bold">Silver</h3>
                     <p class="text-4xl font-bold my-4 price">$300</p>
                     <p class="dark:text-gray-400 text-gray-300">Fifteen (15) GUARANTEED individual sports trade credits.</p>
                     <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6">Choose</a>
                 </div>
-                <div class="card pricing-card gold p-6 flex flex-col">
+                <div class="card pricing-card gold p-6 flex flex-col min-w-[260px] snap-start">
                     <h3 class="text-xl font-bold">Gold</h3>
                     <p class="text-4xl font-bold my-4 price">$550</p>
                     <p class="dark:text-gray-400 text-gray-300">Thirty (30) GUARANTEED individual sports trade credits.</p>
                     <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6">Choose</a>
                 </div>
-                <div class="card pricing-card standard platinum p-8 flex flex-col ring-2 ring-accent border-accent shadow-2xl relative scale-105 z-10" style="background: linear-gradient(135deg, #3B82F6 0%, #FFCD1C 100%); color: #fff;">
+                <div id="platinum-card" class="card pricing-card standard platinum p-8 flex flex-col ring-2 ring-accent border-accent shadow-2xl relative md:scale-105 z-10 min-w-[260px] snap-center" style="background: linear-gradient(135deg, #3B82F6 0%, #FFCD1C 100%); color: #fff;">
                     <span class="best-value-badge">Best Value</span>
                     <h3 class="text-xl font-bold flex items-center gap-2">Platinum <span class="text-3xl text-yellow-400"><i class="fa-solid fa-crown"></i></span></h3>
                     <p class="text-4xl font-bold text-white my-4 price">$1100</p>
@@ -340,6 +339,17 @@
                     <a href="%SIGNUP_COGNITO_URL%?response_type=token&client_id=%COGNITO_APP_CLIENT_ID%&redirect_uri=%SIGNUP_REDIRECT_URL%" class="mt-auto w-full text-center bg-accent text-white font-bold py-2 px-4 rounded-lg mt-6 platinum-btn">Choose</a>
                 </div>
             </div>
+            <script>
+            // Center the Platinum card on mobile by default
+            window.addEventListener('DOMContentLoaded', function() {
+                const carousel = document.getElementById('package-carousel');
+                const platinum = document.getElementById('platinum-card');
+                if (carousel && platinum && window.innerWidth < 768) {
+                    const left = platinum.offsetLeft - (carousel.offsetWidth / 2) + (platinum.offsetWidth / 2);
+                    carousel.scrollTo({ left, behavior: 'smooth' });
+                }
+            });
+            </script>
             <p class="text-center text-sm dark:text-gray-500 mt-6"><b>GUARANTEED</b> = if the pick does not win, you will receive another credit until you win. This means that you will only be deducted a credit if the pick you unlock wins. If the pick we provide is incorrect, you will receive another credit until you unlock a winning pick. Please note: This does not guarantee a profit.</p>
         </section>
 

@@ -1,8 +1,9 @@
 import json
 import os
-import datetime
-import requests
+
 import boto3
+import requests
+from bs4 import BeautifulSoup
 
 # Initialize AWS S3 client
 s3_client = boto3.client("s3")
@@ -74,10 +75,10 @@ LIST_PICKS_SORT_FIELD = os.environ.get("LIST_PICKS_SORT_FIELD", "matchTime")
 LIST_PICKS_SORT_DIRECTION = os.environ.get("LIST_PICKS_SORT_DIRECTION", "DESC")
 LIST_PICKS_FILTER_JSON = os.environ.get(
     "LIST_PICKS_FILTER_JSON", '{"status":["CORRECT","INCORRECT","PUSH"]}'
-)  # Default to empty filter
+)
 
 
-def execute_graphql_query(query, variables, output_prefix):
+def execute_graphql_query(query, variables, output_prefix, data_dict):
     """
     Helper function to execute a single GraphQL query and upload its result to S3.
     Returns True on success, False on failure.
@@ -103,6 +104,16 @@ def execute_graphql_query(query, variables, output_prefix):
         extracted_data = None
         if output_prefix == "pick_stats":
             extracted_data = data.get("data", {}).get("GetPickStats")
+            # --- update win-rate, and save locally ---
+
+            try:
+                if extracted_data and "percentageALL" in extracted_data:
+                    data_dict["percentageALL"] = extracted_data["percentageALL"]
+                else:
+                    print("Could not find win-rate element or percentageALL in data.")
+            except Exception as e:
+                print(f"Failed to update index.html with win-rate: {e}")
+
         elif output_prefix == "list_picks":
             list_picks_data = data.get("data", {}).get("ListPicks")
             if list_picks_data and "rows" in list_picks_data:
@@ -110,6 +121,15 @@ def execute_graphql_query(query, variables, output_prefix):
                 print(
                     f"{output_prefix} fetched {len(extracted_data)} records out of {list_picks_data.get('totalRecords', 'N/A')}"
                 )
+                win_streak = 0
+                for row in extracted_data:
+                    if row["status"] == "CORRECT":
+                        win_streak += 1
+                    else:
+                        break
+                print(f"Win streak: {win_streak}")
+                data_dict["winStreak"] = win_streak
+
             else:
                 print(f"No '{output_prefix}' data or 'rows' found in GraphQL response.")
 
@@ -119,8 +139,6 @@ def execute_graphql_query(query, variables, output_prefix):
             )
             return True  # Consider it a success if no data, but no error
 
-        current_utc_time = datetime.datetime.utcnow()
-        # Save to S3 under /data/latest
         s3_key_prefix = "data/latest"
         s3_file_name = f"{s3_key_prefix}/{output_prefix}.json"
 
@@ -158,6 +176,38 @@ def execute_graphql_query(query, variables, output_prefix):
         return False
 
 
+def update_index_html(data_dict):
+
+    s3_index_key = "index.html"
+    index_obj = s3_client.get_object(Bucket=S3_BUCKET_NAME, Key=s3_index_key)
+    index_html = index_obj["Body"].read().decode("utf-8")
+
+    soup = BeautifulSoup(index_html, "html.parser")
+    win_rate_elem = soup.find(id="win-rate")
+    hero_text_elem = soup.find(id="hero-text")
+    win_streak_elem = soup.find(id="win-streak")
+
+    win_rate_elem.string = f"{data_dict['percentageALL']}%"
+    hero_text_elem.string = f"Join 1,200+ successful bettors getting data-driven NBA tips with {data_dict['percentageALL']}% win rate and 25% ROI"
+    win_streak_elem.string = f"{data_dict['winStreak']}"
+
+    # Save modified HTML to /data/latest/index.html
+    local_dir = os.path.join(os.getcwd(), "data", "latest")
+    os.makedirs(local_dir, exist_ok=True)
+    local_index_path = os.path.join(local_dir, "index.html")
+    with open(local_index_path, "w") as f:
+        f.write(str(soup))
+    print(f"Updated index.html with win-rate and saved to {local_index_path}")
+    # Upload the modified index.html back to S3
+    s3_client.put_object(
+        Bucket=S3_BUCKET_NAME,
+        Key=s3_index_key,
+        Body=str(soup),
+        ContentType="text/html",
+    )
+    print(f"Uploaded updated index.html to s3://{S3_BUCKET_NAME}/{s3_index_key}")
+
+
 def lambda_handler(event, context):
     """
     Main handler for the Lambda function.
@@ -166,10 +216,13 @@ def lambda_handler(event, context):
     """
     print("Starting execution of both GraphQL queries.")
     overall_status = True
+    data_dict = {}
 
     # --- Execute GetPickStats Query ---
     pick_stats_variables = {"sportId": SPORT_ID}
-    if not execute_graphql_query(GET_PICK_STATS_QL, pick_stats_variables, "pick_stats"):
+    if not execute_graphql_query(
+        GET_PICK_STATS_QL, pick_stats_variables, "pick_stats", data_dict
+    ):
         overall_status = False
         print("GetPickStats query failed.")
 
@@ -190,10 +243,12 @@ def lambda_handler(event, context):
         "filter": filter_obj,
     }
     if not execute_graphql_query(
-        LIST_PICKS_QL_FULL_FIELDS, list_picks_variables, "list_picks"
+        LIST_PICKS_QL_FULL_FIELDS, list_picks_variables, "list_picks", data_dict
     ):
         overall_status = False
         print("ListPicks query failed.")
+
+    update_index_html(data_dict)
 
     if overall_status:
         return {

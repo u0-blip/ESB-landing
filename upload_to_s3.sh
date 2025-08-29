@@ -6,7 +6,7 @@ set -e
 # --- Configuration ---
 FILE_PATH="$1"
 BUCKET_NAME="esb-new-landing"
-S3_PATH="/"  # can be left empty ""
+S3_PATH="assets/"  # can be left empty ""
 REGION="ap-southeast-2"
 
 if [[ -z "$FILE_PATH" ]]; then
@@ -20,6 +20,7 @@ if [[ ! -f "$FILE_PATH" ]]; then
 fi
 
 FILE_NAME=$(basename "$FILE_PATH")
+echo "file name: $S3_PATH$FILE_NAME"
 aws s3 cp "$FILE_PATH" "s3://$BUCKET_NAME/$S3_PATH$FILE_NAME" --region "$REGION"
 
 echo "✅ Upload complete: s3://$BUCKET_NAME/$S3_PATH$FILE_NAME"

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elite Sports Bets</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="./assets/favicon.png" rel="icon" type="image/png">
+<style>
+        :root {
+            --color-primary: #FFCD1C;
+            --color-secondary: #334155;
+            --color-accent: #3B82F6;
+            --color-success: #22C55E;
+            --color-error: #EF4444;
+            --color-dark-bg: #0F172A;
+            --color-dark-card: #1E293B;
+            --color-dark-text: #E2E8F0;
+            --color-dark-border: #1E293B;
+            --color-light-bg: #F1F5F9;
+            --color-light-card: #FFFFFF;
+            --color-light-text: #1E293B;
+            --color-light-border: #E2E8F0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark body {
+            background-color: var(--color-dark-bg);
+            color: var(--color-dark-text);
+        }
+
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+
+        body {
+            background-color: var(--color-light-bg);
+            color: var(--color-light-text);
+        }
+        
+        .section-padding { padding: 24px; }
+        .gutters { padding-left: 16px; padding-right: 16px; }
+        .section-spacing {
+            margin-top: 16px;
+            margin-bottom: 32px;
+            background-color: #e5eaf3; /* Slightly darker than light bg */
+            border-radius: 16px;
+            box-shadow: 0 2px 8px 0 rgba(16, 42, 67, 0.04);
+            border-top: 0.5px solid #f8fafc; /* Thinner lighter separator */
+            border-bottom: 0.5px solid #f8fafc;
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+        .dark .section-spacing {
+            background-color: #1a2332; /* Slightly lighter than dark bg */
+            border-top: 0.5px solid #22304a;
+            border-bottom: 0.5px solid #22304a;
+        }
+
+        .card {
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        
+        .dark .card {
+            background-color: var(--color-dark-card);
+            border: 1px solid var(--color-dark-border);
+        }
+
+        .card {
+            background-color: var(--color-light-card);
+            border: 1px solid var(--color-light-border);
+        }
+        
+        .form-field {
+            border-radius: 8px;
+            border: 1px solid var(--color-dark-border);
+            background-color: #0F172A;
+        }
+
+        .dark .form-field {
+            border-color: var(--color-dark-border);
+        }
+        
+        .form-field {
+            border-color: var(--color-light-border);
+        }
+        
+        .btn-primary { background-color: var(--color-primary); }
+        .btn-primary:hover { opacity: 0.9; }
+        .text-primary { color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-accent { color: var(--color-accent); }
+        .text-success { color: var(--color-success); }
+        .text-error { color: var(--color-error); }
+        
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .faq-item summary {
+            cursor: pointer;
+            outline: none;
+        }
+
+        .faq-item[open] summary ~ * {
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.6);
+        }
+        .modal-content {
+            margin: 10% auto;
+            padding: 24px;
+            width: 90%;
+            max-width: 500px;
+        }
+        
+        .dark .modal-content {
+            background-color: var(--color-dark-card);
+        }
+        
+        .modal-content {
+             background-color: var(--color-light-card);
+        }
+        
+        .close-button {
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .card.pricing-card {
+            background-color: #232b3a;
+            color: #fff;
+            border: 1.5px solid #2d3748;
+            min-height: 420px;
+        }
+        @media (min-width: 768px) {
+            .card.pricing-card {
+                min-height: 430px;
+            }
+        }
+        .pricing-label {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            padding: 2px 12px;
+            border-radius: 9999px;
+        }
+        .label-standard { background: var(--color-primary); color: #fff; }
+        .label-bronze { background: #CD7F32; color: #fff; }
+        .label-silver { background: #C0C0C0; color: #232b3a; }
+        .label-gold { background: #FFD700; color: #232b3a; }
+        .best-value-badge {
+            background: var(--color-accent);
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 9999px;
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            z-index: 2;
+        }
+        .pricing-card.gold .price {
+            color: #FFD700;
+        }
+        .pricing-card.silver .price {
+            color: var(--color-accent);
+        }
+        .pricing-card.bronze .price {
+            color: #CD7F32;
+        }
+        .bg-accent { background-color: #3B82F6; }
+        .stat-hover {
+            cursor: pointer;
+            transition: transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+        }
+        .stat-hover:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 8px 24px 0 rgba(16, 42, 67, 0.12);
+            z-index: 1;
+        }
+    </style>
+</link></link></head>
+<body>
+<header class="dark:bg-gray-900 bg-white py-4 px-8 shadow-md sticky top-0 z-40">
+<div class="container mx-auto flex justify-between items-center">
+<a class="navbar-item" href="/">
+<img src="./assets/ESB-logo-yellow.png" style="height: 32px;"/>
+</a>
+<nav class="hidden md:flex items-center space-x-6">
+<a class="dark:text-gray-300 hover:text-primary" href="#">Features</a>
+<a class="dark:text-gray-300 hover:text-primary" href="#pricing">Pricing</a>
+<a class="dark:text-gray-300 hover:text-primary" href="#">Scorecard</a>
+<a class="dark:text-gray-300 hover:text-primary" href="#">FAQ</a>
+<a class="dark:text-gray-300 hover:text-primary" href="#">About</a>
+<a class="dark:text-gray-300 hover:text-primary" href="#">Contact us</a>
+<a class="dark:text-gray-300 hover:text-primary" href="#">Login</a>
+<a class="bg-primary text-black font-bold py-2 px-4 rounded-lg" href="#">Join Now</a>
+</nav>
+<div class="md:hidden flex items-center">
+<button class="mr-2 focus:outline-none" id="mobile-menu-toggle">
+<svg class="w-7 h-7 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+<button class="mr-2" id="theme-toggle-mobile">
+<svg class="w-5 h-5 hidden" fill="currentColor" id="theme-toggle-dark-icon-mobile" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+<svg class="w-5 h-5 hidden" fill="currentColor" id="theme-toggle-light-icon-mobile" viewbox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-1.414a1 1 0 01-.707.293h-1a1 1 0 110-2h1a1 1 0 01.707.293l.001.001zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM3.05 13.464l.707-.707a1 1 0 011.414 1.414l-.707.707a1 1 0 01-1.414-1.414zM17 10a1 1 0 01-.293.707l-.001.001a1 1 0 11-1.414-1.414l.001-.001.707-.707A1 1 0 0117 10zM4.536 4.536l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 10-1.414 1.414z"></path></svg>
+</button>
+</div>
+</div>
+</header>
+<!-- Mobile menu (hidden by default) -->
+<nav class="md:hidden fixed top-0 right-0 w-full h-full bg-black bg-opacity-80 z-50 hidden flex justify-end" id="mobile-menu">
+<div class="bg-white dark:bg-gray-900 w-11/12 max-w-xs h-full p-8 shadow-lg flex flex-col transform translate-x-full transition-transform duration-300" id="mobile-menu-panel">
+<button class="self-end mb-8 focus:outline-none" id="mobile-menu-close">
+<svg class="w-7 h-7 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+<a class="mb-4 dark:text-gray-300 hover:text-primary" href="#">Features</a>
+<a class="mb-4 dark:text-gray-300 hover:text-primary" href="#pricing">Pricing</a>
+<a class="mb-4 dark:text-gray-300 hover:text-primary" href="#">Scorecard</a>
+<a class="mb-4 dark:text-gray-300 hover:text-primary" href="#">FAQ</a>
+<a class="mb-4 dark:text-gray-300 hover:text-primary" href="#">About</a>
+<a class="mb-4 dark:text-gray-300 hover:text-primary" href="#">Contact us</a>
+<a class="mb-4 dark:text-gray-300 hover:text-primary" href="#">Login</a>
+<a class="bg-primary text-black font-bold py-2 px-4 rounded-lg text-center" href="#">Join Now</a>
+</div>
+</nav>
+<main>
+<section class="relative text-white text-center" style="background: url('./assets/hero.jpg') no-repeat center center; background-size: cover;">
+<div class="absolute inset-0 bg-black opacity-60"></div>
+<div class="relative container mx-auto pt-32 pb-20 px-4">
+<h1 class="text-5xl font-bold mb-4 flex items-center justify-center gap-2">Winning with Expert NBA Tips <img alt="NBA Logo" class="w-16 h-16 inline-block align-middle" src="./assets/nba-logo.svg"/></h1>
+<p class="text-xl mb-8" id="hero-text">Join 1,200+ successful bettors getting data-driven NBA tips with 67.13% win rate and 25% ROI</p>
+<div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+<a class="w-full md:w-auto btn-primary text-black font-extrabold text-2xl md:text-3xl py-5 px-10 rounded-xl text-center shadow-lg transition-transform duration-200 hover:scale-105" href="#">Get Winning Tips</a>
+</div>
+</div>
+<div class="relative container mx-auto gutters pb-16">
+<h2 class="text-3xl font-bold text-center mb-2">Live Performance Stats</h2>
+<p class="text-center text-gray-400 mb-8">Real-time results from our expert tipsters</p>
+<div class="dark grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+<div class="card p-6 stat-hover"><p class="text-4xl stat-number text-success" id="win-rate">67.13%</p><p>Win Rate</p></div>
+<div class="card p-6 stat-hover"><p class="text-4xl stat-number text-primary" id="average-roi">+25%</p><p>Average ROI</p></div>
+<div class="card p-6 stat-hover"><p class="text-4xl stat-number text-accent" id="win-streak">4</p><p>Win Streak</p></div>
+<div class="card p-6 stat-hover"><p class="text-4xl stat-number" id="active-members">1,200+</p><p>Active Members</p></div>
+</div>
+</div>
+</section>
+<section class="section-spacing container mx-auto gutters text-center" id="how-it-works">
+<h2 class="text-3xl font-bold mb-2">HOW IT WORKS</h2>
+<p class="text-gray-400 mb-4">Get Verified Picks. Guaranteed Credits. Built for Bettors Who Take It Seriously.</p>
+<h3 class="text-primary font-semibold mb-8">3 EASY STEPS</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<div class="bg-primary text-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-2xl font-bold">1</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Register an account</h3>
+</div>
+<div>
+<div class="bg-primary text-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-2xl font-bold">2</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Choose your package</h3>
+<p class="">Pick a package that is right for you.</p>
+</div>
+<div>
+<div class="bg-primary text-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-2xl font-bold">3</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Unlock your picks and start winning</h3>
+<p class="">Use your picks and bet with your bookie.</p>
+</div>
+</div>
+</section>
+<section class="section-spacing container mx-auto gutters" id="pricing">
+<h2 class="text-3xl font-bold text-center mb-2">PRICING</h2>
+<p class="text-center mb-8">First time customer? Try our standard trade. Looking to get more out of Elite Sports Bets? Go Gold!</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="card pricing-card bronze p-6 flex flex-col">
+<h3 class="text-xl font-bold">Bronze</h3>
+<p class="text-4xl font-bold my-4 price">$120</p>
+<p class="dark:text-gray-400 text-gray-300">Five (5) GUARANTEED individual sports trade credits.</p>
+<a class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6" href="%SIGNUP_COGNITO_URL%?response_type=token&amp;client_id=%COGNITO_APP_CLIENT_ID%&amp;redirect_uri=%SIGNUP_REDIRECT_URL%">Choose</a>
+</div>
+<div class="card pricing-card silver p-6 flex flex-col">
+<h3 class="text-xl font-bold">Silver</h3>
+<p class="text-4xl font-bold my-4 price">$300</p>
+<p class="dark:text-gray-400 text-gray-300">Fifteen (15) GUARANTEED individual sports trade credits.</p>
+<a class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6" href="%SIGNUP_COGNITO_URL%?response_type=token&amp;client_id=%COGNITO_APP_CLIENT_ID%&amp;redirect_uri=%SIGNUP_REDIRECT_URL%">Choose</a>
+</div>
+<div class="card pricing-card gold p-6 flex flex-col">
+<h3 class="text-xl font-bold">Gold</h3>
+<p class="text-4xl font-bold my-4 price">$550</p>
+<p class="dark:text-gray-400 text-gray-300">Thirty (30) GUARANTEED individual sports trade credits.</p>
+<a class="mt-auto w-full text-center btn-primary text-black font-bold py-2 px-4 rounded-lg mt-6" href="%SIGNUP_COGNITO_URL%?response_type=token&amp;client_id=%COGNITO_APP_CLIENT_ID%&amp;redirect_uri=%SIGNUP_REDIRECT_URL%">Choose</a>
+</div>
+<div class="card pricing-card standard platinum p-8 flex flex-col ring-2 ring-accent border-accent shadow-2xl relative scale-105 z-10" style="background: linear-gradient(135deg, #3B82F6 0%, #FFCD1C 100%); color: #fff;">
+<span class="best-value-badge">Best Value</span>
+<h3 class="text-xl font-bold flex items-center gap-2">Platinum <span class="text-3xl text-yellow-400"><i class="fa-solid fa-crown"></i></span></h3>
+<p class="text-4xl font-bold text-white my-4 price">$1100</p>
+<p class="text-dark">Unlimited monthly picks including live (in-play) and futures trades. </p>
+<p class="text-dark">A senior trader is assigned to you and acts as your VIP concierge. </p>
+<a class="mt-auto w-full text-center bg-accent text-white font-bold py-2 px-4 rounded-lg mt-6 platinum-btn" href="%SIGNUP_COGNITO_URL%?response_type=token&amp;client_id=%COGNITO_APP_CLIENT_ID%&amp;redirect_uri=%SIGNUP_REDIRECT_URL%">Choose</a>
+</div>
+</div>
+<p class="text-center text-sm dark:text-gray-500 mt-6"><b>GUARANTEED</b> = if the pick does not win, you will receive another credit until you win. This means that you will only be deducted a credit if the pick you unlock wins. If the pick we provide is incorrect, you will receive another credit until you unlock a winning pick. Please note: This does not guarantee a profit.</p>
+</section>
+<section class="section-spacing container mx-auto gutters">
+<h2 class="text-3xl font-bold text-center mb-2">What Our Members Say</h2>
+<p class="text-center text-yellow-400 mb-8">★★★★☆ 4.8/5 from 1,200+ members</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="card p-6">
+<p class="mb-4">"Up 40% this season thanks to ESB. The analysis is spot-on and the community is incredibly supportive."</p>
+<div class="flex items-center"><p class="font-bold">Mike Johnson</p><p class="text-sm ml-2">Member since 2023</p></div>
+</div>
+<div class="card p-6">
+<p class="mb-4">"Best investment I've made. The tips are consistent and the ROI tracking helps me stay disciplined."</p>
+<div class="flex items-center"><p class="font-bold">Sarah Davis</p><p class="text-sm ml-2">Member since 2022</p></div>
+</div>
+<div class="card p-6">
+<p class="mb-4">"Finally found a service that delivers. Transparent results and expert analysis make all the difference."</p>
+<div class="flex items-center"><p class="font-bold">Alex Rodriguez</p><p class="text-sm ml-2">Member since 2023</p></div>
+</div>
+</div>
+</section>
+<section class="section-spacing container mx-auto gutters">
+<h2 class="text-3xl font-bold text-center mb-8">Why Choose ESB</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+<div class="card p-6 border border-gray-200 dark:border-gray-700 rounded-md">
+<div class="flex items-start gap-4 mb-4">
+<i class="fa-solid fa-user-tie text-2xl text-indigo-500"></i>
+<h3 class="text-xl font-semibold">Elite Expertise</h3>
+</div>
+<p class="">
+                  We only work with the best. Our traders live and breathe sports, having achieved success unmatched in the betting industry. Every team member is rigorously vetted for excellence.
+                </p>
+</div>
+<div class="card p-6 border border-gray-200 dark:border-gray-700 rounded-md">
+<div class="flex items-start gap-4 mb-4">
+<i class="fa-solid fa-network-wired text-2xl text-indigo-500"></i>
+<h3 class="text-xl font-semibold">Syndicate Access</h3>
+</div>
+<p class="">
+                  We're connected to the most powerful syndicates of information in the world and use cutting-edge tech to deliver elite insights directly to our members.
+                </p>
+</div>
+<div class="card p-6 border border-gray-200 dark:border-gray-700 rounded-md">
+<div class="flex items-start gap-4 mb-4">
+<i class="fa-solid fa-chart-line text-2xl text-indigo-500"></i>
+<h3 class="text-xl font-semibold">Comprehensive Data</h3>
+</div>
+<p class="">
+                  Our picks integrate all available data: advanced statistical models, live stadium news, injury updates, referee assignments, and even weather conditions.
+                </p>
+</div>
+<div class="card p-6 border border-gray-200 dark:border-gray-700 rounded-md">
+<div class="flex items-start gap-4 mb-4">
+<i class="fa-solid fa-coins text-2xl text-indigo-500"></i>
+<h3 class="text-xl font-semibold">Skin in the Game</h3>
+</div>
+<p class="">
+                  Every pick we offer is personally backed by our traders. We're not just recommending bets—we're placing them ourselves. Our success is your success.
+                </p>
+</div>
+</div>
+</section>
+<div class="bg-primary rounded-lg text-center p-12">
+<h2 class="text-3xl font-bold text-black mb-4">Ready to Start Winning?</h2>
+<p class="text-black mb-8">Join 1,200+ successful bettors and turn your basketball knowledge into profit.</p>
+<a class="bg-white text-black font-bold py-3 px-8 rounded-lg" href="#">Get Started Today</a>
+</div>
+<section class="section-spacing container mx-auto gutters max-w-4xl">
+<h2 class="text-3xl font-bold text-center mb-8">FREQUENTLY ASKED QUESTIONS</h2>
+<div class="space-y-4">
+<details class="faq-item card p-4">
+<summary class="font-semibold">What does ESB actually do?</summary>
+<p class="mt-2">We are a sports betting consultant business. Our purpose is to help our members to become sharp bettors who consistently profit on sports betting. We provide industry leading Premium picks built on superior knowledge and experience that we back ourselves. NO other handicapping service offers this.</p>
+</details>
+<details class="faq-item card p-4">
+<summary class="font-semibold">What is a 'pick'?</summary>
+<p class="mt-2">A pick is a recommendation that we provide for you to use in placing a sports bet. A pick is synonymous with the words 'play', 'tip', 'bet' and 'trade' in the context of sports betting.</p>
+</details>
+<details class="faq-item card p-4">
+<summary class="font-semibold">What benefits do I receive as an ESB member?</summary>
+<p class="mt-2">Membership is entirely free. Once you register an ESB account, you will gain access to our weekly newsletter, betting articles as well as receive weekly Premium industry leading picks for free.</p>
+</details>
+<details class="faq-item card p-4">
+<summary class="font-semibold">How do I receive my picks?</summary>
+<p class="mt-2">To receive a pick, you must log into your account and UNLOCK the pick that you are interested in by using your CREDITS. Each pick is worth one (1) credit. Alternatively, you can have your picks emailed to you or sent via SMS text message.</p>
+</details>
+<details class="faq-item card p-4">
+<summary class="font-semibold">Which Membership option should I choose?</summary>
+<p class="mt-2">This is commensurate to how much sports betting you partake. If you trade often, then the Silver or Gold packages will be most suitable. If you seek to lock in a profit and approach sports betting as an investment or income-generating venture, the Platinum membership is ideal.</p>
+</details>
+<details class="faq-item card p-4">
+<summary class="font-semibold">How does the Platinum membership work?</summary>
+<p class="mt-2">The Platinum membership is suited to members who are serious about using sports betting to develop short term and long-term wealth. You will unlock the true power of Elite Sports Bets using this membership and will quickly see your bankroll grow. As a Platinum member, you will have a personal senior trader and VIP client manager who will take full control of all your sports betting so that you won't have to lift a finger. Please email vip@elitesportsbets.com for further information.</p>
+</details>
+<details class="faq-item card p-4">
+<summary class="font-semibold">When do I receive my picks?</summary>
+<p class="mt-2">Our dominance of the industry relies on the rigorousness and thorough work ethic we boast. We are highly detail oriented and incorporate all relevant and pertinent data into our picks, which are then published at least 2 hours prior to the starting time of the event.</p>
+</details>
+<details class="faq-item card p-4">
+<summary class="font-semibold">Does ESB guarantee a Profit?</summary>
+<p class="mt-2">ESB guarantees a profit only to our Platinum members.</p>
+</details>
+<details class="faq-item card p-4">
+<summary class="font-semibold">Can I cancel my membership?</summary>
+<p class="mt-2">Yes. You can downgrade, upgrade or cancel your service at any time from your account page. When you cancel, you will receive a refund in proportion to the usage of your account calculated on a pro-rata basis. Please refer to our Refund policy in the ESB Terms and Conditions.</p>
+</details>
+<details class="faq-item card p-4">
+<summary class="font-semibold">What is a GUARANTEED pick?</summary>
+<p class="mt-2">A guaranteed pick means that you will not be charged a credit unless the pick you unlock wins. If the pick you unlock loses, you will receive another credit until you unlock a winning pick. Only then will your credits be redeemed. Please note that a GUARANTEED pick does not guarantee a profit.</p>
+</details>
+</div>
+</section>
+</main>
+<div class="modal" id="contactModal">
+<div class="modal-content card relative">
+<span class="close-button" onclick="closeModal()">×</span>
+<h2 class="text-2xl font-bold text-center mb-2">CONTACT US</h2>
+<p class="text-center text-primary mb-2">LETS TALK ABOUT IT</p>
+<p class="text-center mb-6">Get started on the path to quality trades. Contact us for more information on how we can deliver on our promise.</p>
+<form action="#" method="POST">
+<div class="space-y-4">
+<input class="w-full p-3 form-field" name="name" placeholder="Name" type="text"/>
+<input class="w-full p-3 form-field" name="email" placeholder="Email" type="email"/>
+<input class="w-full p-3 form-field" name="subject" placeholder="Subject" type="text"/>
+<textarea class="w-full p-3 form-field" name="message" placeholder="Message" rows="4"></textarea>
+<button class="w-full btn-primary text-white font-bold py-3 rounded-lg" type="submit">Submit</button>
+</div>
+</form>
+</div>
+</div>
+<footer class="dark:bg-gray-900 bg-gray-100 mt-16 py-8">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="dark:text-gray-400 text-lg font-bold">Elite Sports Bets</h3>
+<p class="dark:text-gray-400 mt-2">Expert basketball betting tips with proven results and transparent tracking.</p>
+<div class="flex space-x-4 mt-4">
+<a class="dark:text-gray-400 hover:text-primary" href="#">T</a>
+<a class="dark:text-gray-400 hover:text-primary" href="#">D</a>
+</div>
+</div>
+<div>
+<h4 class="font-semibold">Company</h4>
+<ul class="mt-2 space-y-2">
+<li><a class="dark:text-gray-400 hover:text-primary" href="#">About Us</a></li>
+<li><a class="dark:text-gray-400 hover:text-primary cursor-pointer" href="#" id="contactLink">Contact</a></li>
+<li><a class="dark:text-gray-400 hover:text-primary" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold">Legal</h4>
+<ul class="mt-2 space-y-2">
+<li><a class="dark:text-gray-400 hover:text-primary" href="#">Terms of Service</a></li>
+<li><a class="dark:text-gray-400 hover:text-primary" href="#">Privacy Policy</a></li>
+<li><a class="dark:text-gray-400 hover:text-primary" href="#">Responsible Gambling</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold">Support</h4>
+<ul class="mt-2 space-y-2">
+<li><a class="dark:text-gray-400 hover:text-primary" href="#">Help Center</a></li>
+<li><a class="dark:text-gray-400 hover:text-primary" href="#">Discord Support</a></li>
+<li><a class="dark:text-gray-400 hover:text-primary" href="#faq">FAQ</a></li>
+</ul>
+</div>
+</div>
+<div class="text-center dark:text-gray-500 mt-8 pt-8 border-t dark:border-gray-700 border-gray-200">
+<p>© 2024 Elite Sports Bets. All rights reserved. | 18+ Only. Gamble Responsibly.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Modal script
+        const modal = document.getElementById('contactModal');
+        const contactLink = document.getElementById('contactLink');
+        
+        function openModal() {
+            modal.style.display = 'block';
+        }
+        
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        contactLink.onclick = openModal;
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Theme toggle script
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon-mobile');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon-mobile');
+
+        // Change the icons inside the button based on previous settings
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            document.documentElement.classList.add('dark');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+             document.documentElement.classList.remove('dark');
+        }
+
+        const themeToggleButton = document.getElementById('theme-toggle-mobile');
+
+        themeToggleButton.addEventListener('click', function() {
+            // toggle icons inside button
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            // if set via local storage previously
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+
+            // if NOT set via local storage previously
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+
+        // Hamburger menu script
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenuPanel = document.getElementById('mobile-menu-panel');
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+                mobileMenuPanel.classList.remove('translate-x-full');
+            }, 10);
+        });
+        mobileMenuClose.addEventListener('click', function() {
+            mobileMenuPanel.classList.add('translate-x-full');
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300);
+        });
+        // Optional: close menu when clicking outside the menu panel
+        mobileMenu.addEventListener('click', function(e) {
+            if (e.target === mobileMenu) {
+                mobileMenuPanel.classList.add('translate-x-full');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+            }
+        });
+    </script>
+</body>
+</html>

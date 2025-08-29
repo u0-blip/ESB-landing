@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Hoops Picks - Premium Basketball Tipping Service</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles & Configuration for Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'heading': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-gold': '#FFD700',
+                        'brand-silver': '#C0C0C0',
+                        'brand-bronze': '#CD7F32',
+                        'gray-950': '#0d1117',
+                        'gray-900': '#161b22',
+                        'gray-800': '#1f2937',
+                    },
+                    boxShadow: {
+                        'glow-gold': '0 0 20px rgba(255, 215, 0, 0.5)',
+                        'glow-silver': '0 0 15px rgba(192, 192, 192, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Basic styling for the page */
+        body {
+            background-color: tailwind.config.theme.extend.colors['gray-950'];
+            color: #E5E7EB; /* A light gray for text */
+        }
+        .hero-section {
+            background-image: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.95)), url('https://placehold.co/1920x1080/000000/FFFFFF?text=Dramatic+Basketball+Action');
+            background-size: cover;
+            background-position: center;
+        }
+        .package-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold font-heading text-white">
+                Elite<span class="text-brand-gold">Hoops</span>Picks
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#why-us" class="hover:text-brand-gold transition-colors">Why Us</a>
+                <a href="#packages" class="hover:text-brand-gold transition-colors">Packages</a>
+                <a href="#testimonials" class="hover:text-brand-gold transition-colors">Testimonials</a>
+                <a href="#packages" class="bg-brand-gold text-gray-950 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 transition-colors">
+                    Get Started
+                </a>
+            </div>
+            <div class="md:hidden">
+                <a href="#packages" class="bg-brand-gold text-gray-950 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 transition-colors">
+                    Join Now
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section py-20 md:py-32 text-center text-white">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold font-heading leading-tight mb-4">
+                    Stop Guessing. <span class="text-brand-gold">Start Winning.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Gain an unbeatable edge with our expert, data-driven basketball tips. We do the research, you collect the winnings.
+                </p>
+                <a href="#packages" class="bg-brand-gold text-gray-950 text-xl font-bold py-4 px-10 rounded-lg hover:bg-yellow-400 transition-transform transform hover:scale-105 inline-block">
+                    View Winning Packages
+                </a>
+            </div>
+        </section>
+
+        <!-- Trust/Stats Section -->
+        <section id="why-us" class="bg-gray-900 py-16">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <div class="text-brand-gold text-5xl font-bold mb-2">89%</div>
+                        <p class="text-gray-400 font-semibold">Win Rate (Last Season)</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <div class="text-brand-gold text-5xl font-bold mb-2">15+</div>
+                        <p class="text-gray-400 font-semibold">Years of Analysis Experience</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <div class="text-brand-gold text-5xl font-bold mb-2">5,000+</div>
+                        <p class="text-gray-400 font-semibold">Happy Members</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <div class="text-brand-gold text-5xl font-bold mb-2">24/7</div>
+                        <p class="text-gray-400 font-semibold">Member Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold font-heading">Choose Your Path to Victory</h2>
+                    <p class="text-gray-400 mt-2 max-w-2xl mx-auto">We offer flexible plans for every level of commitment. Start small or go all-in for maximum returns.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+                    <!-- Bronze Package -->
+                    <div class="package-card bg-gray-900 border border-brand-bronze/50 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold font-heading text-brand-bronze text-center">BRONZE</h3>
+                        <p class="text-center text-gray-400 mb-6">For the Casual Bettor</p>
+                        <p class="text-5xl font-bold text-center mb-6">$29<span class="text-lg font-normal text-gray-400">/mo</span></p>
+                        <ul class="space-y-4 text-gray-300 mb-8">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>5-7 Expert Tips Weekly</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>NBA & College Hoops</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Email Delivery</li>
+                            <li class="flex items-center text-gray-500"><svg class="w-6 h-6 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>Player Prop Bets</li>
+                        </ul>
+                        <button class="w-full bg-brand-bronze text-white font-bold py-3 rounded-lg hover:opacity-80 transition-opacity">Get Started</button>
+                    </div>
+
+                    <!-- Silver Package (Most Popular) -->
+                    <div class="package-card bg-gray-900 border-2 border-brand-silver rounded-xl p-8 lg:p-10 relative transform lg:scale-110 shadow-lg shadow-glow-silver">
+                        <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-brand-silver text-gray-950 text-sm font-bold px-4 py-1 rounded-full">MOST POPULAR</div>
+                        <h3 class="text-3xl font-bold font-heading text-brand-silver text-center">SILVER</h3>
+                        <p class="text-center text-gray-400 mb-6">For the Serious Player</p>
+                        <p class="text-6xl font-bold text-center mb-6">$59<span class="text-lg font-normal text-gray-400">/mo</span></p>
+                        <ul class="space-y-4 text-gray-300 mb-8">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>10-15 Expert Tips Weekly</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>All Bronze Features</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Email & SMS Alerts</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Player Prop Bets Included</li>
+                        </ul>
+                        <button class="w-full bg-brand-silver text-gray-950 font-bold py-3 rounded-lg hover:opacity-80 transition-opacity">Claim Best Value</button>
+                    </div>
+
+                    <!-- Gold Package -->
+                    <div class="package-card bg-gray-900 border border-brand-gold/50 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold font-heading text-brand-gold text-center">GOLD</h3>
+                        <p class="text-center text-gray-400 mb-6">For the Professional Investor</p>
+                        <p class="text-5xl font-bold text-center mb-6">$99<span class="text-lg font-normal text-gray-400">/mo</span></p>
+                        <ul class="space-y-4 text-gray-300 mb-8">
+                           <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited High-Confidence Tips</li>
+                           <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>All Silver Features</li>
+                           <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Priority Support</li>
+                           <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1-on-1 Analyst Access</li>
+                        </ul>
+                        <button class="w-full bg-brand-gold text-gray-950 font-bold py-3 rounded-lg hover:opacity-80 transition-opacity">Go for Gold</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="bg-gray-900 py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold font-heading">What Our Members Are Saying</h2>
+                    <p class="text-gray-400 mt-2">Real results from real people.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <p class="text-gray-300 italic mb-4">"I was skeptical at first, but after joining the Silver plan, my winnings have more than paid for the subscription. The analysis is top-notch. Highly recommend!"</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/48x48/E5E7EB/1F2937?text=JD" class="w-12 h-12 rounded-full mr-4" alt="User testimonial photo">
+                            <div>
+                                <p class="font-bold text-white">John D.</p>
+                                <p class="text-sm text-brand-silver">Silver Member</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <p class="text-gray-300 italic mb-4">"The Gold package is a game-changer. Having direct access to an analyst has helped me understand the 'why' behind the bets. It's not just about tips, it's about education."</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/48x48/E5E7EB/1F2937?text=MS" class="w-12 h-12 rounded-full mr-4" alt="User testimonial photo">
+                            <div>
+                                <p class="font-bold text-white">Maria S.</p>
+                                <p class="text-sm text-brand-gold">Gold Member</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <p class="text-gray-300 italic mb-4">"Finally, a tipping service that's transparent and consistently delivers. I started with Bronze and quickly upgraded. The results speak for themselves."</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/48x48/E5E7EB/1F2937?text=KB" class="w-12 h-12 rounded-full mr-4" alt="User testimonial photo">
+                            <div>
+                                <p class="font-bold text-white">Kevin B.</p>
+                                <p class="text-sm text-brand-silver">Upgraded to Silver</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p class="font-bold text-lg text-white mb-2">Elite<span class="text-brand-gold">Hoops</span>Picks</p>
+            <p class="mb-4">The ultimate destination for premium basketball insights.</p>
+            <div class="flex justify-center space-x-4 mb-6">
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <span>|</span>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <span>|</span>
+                <a href="#" class="hover:text-white">Contact Us</a>
+            </div>
+            <p class="text-sm">&copy; 2024 EliteHoopsPicks. All Rights Reserved.</p>
+            <p class="text-xs mt-4 max-w-2xl mx-auto">Disclaimer: Please gamble responsibly. All betting activities are undertaken at your own risk. We provide analysis and tips, not guaranteed outcomes.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
